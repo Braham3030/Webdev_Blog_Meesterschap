@@ -1,0 +1,137 @@
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --h1-font: 3rem;
+    --h2-font: 2rem;
+    --h3-font: 1.5rem;
+    --h4-font: 1.25rem;
+    --p-font: 1rem;
+    --nav-font: 1.5rem;
+
+    --border-radius-articleBox: 18px;
+    --border-radius-nav: 8px;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    border: 2px solid green;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid red;
+    width: 100%;
+    /* height: 10vh; */
+
+    > h1 {
+        font-size: var(--h1-font);
+    }
+
+    nav {
+        border: 2px solid orange;
+        width: 100%;
+
+        > ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            list-style: none;
+            margin: 0;
+            padding: 1em;
+
+            > li {
+                margin: 0;
+                list-style: none;
+                /* border: 2px solid purple; */
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+                padding: 0.5em 1em;
+                border-radius: var(--border-radius-nav);
+
+                > a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: var(--nav-font);
+                    /* border: 2px solid pink; */
+                    /* width: 100%; */
+                }
+            }
+        }
+    }
+}
+
+    h2 {
+        width: 100%;
+        font-size: var(--h2-font);
+    }
+
+
+.profesionalGoalsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    /* padding: 5em; */
+
+    .profesionalContainer1, .profesionalContainer2, .profesionalContainer3 {
+        border: 8px solid blue;
+        padding: 1em;
+        border-radius: var(--border-radius-articleBox);
+
+        > h3 {
+            font-size: var(--h3-font);
+        }
+        > p {
+            font-size: var(--p-font);
+        }
+    }
+}
+
+.weeklyNerdContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    /* padding: 5em; */
+    
+    .weeklyNerd1 {
+        border: 8px solid blue;
+        padding: 1em;
+        border-radius: var(--border-radius-articleBox);
+
+        > h3 {
+            margin: 0;
+            font-size: var(--h3-font);
+        }
+        > h4 {
+            margin: 0;
+            font-size: var(--h4-font);
+        }
+        > p {
+            margin: 0;
+            font-size: var(--p-font);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .profesionalGoalsContainer, .weeklyNerdContainer {
+        flex-direction: row;
+    }
+}
