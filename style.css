@@ -12,7 +12,7 @@ html {
 }
 
 :root {
-    --h1-font: 4rem;
+    --h1-font: 15rem;
     --h2-font: 2.5rem;
     --h3-font: 2rem;
     --h4-font: 1.6rem;
@@ -39,9 +39,9 @@ header {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     overflow: hidden;
     background-color: rgba(28, 102, 167, 0.8);
 
@@ -68,18 +68,75 @@ header {
             color: black;
             text-decoration: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 5px;
 
             transition: letter-spacing 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), margin-right 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+            animation: letterAnimation 1.2s cubic-bezier(0.33, 0.72, 0, 1.18);
 
             &:hover {
-                letter-spacing: 260px;
-                margin-right: -260px;
+                letter-spacing: 180px;
+                margin-right: -180px;
             }
+
+            > span:first-of-type {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 0.8;
+                grid-row: 1 / span 2;
+                font-size: 30rem;
+            }
+
+            > span:nth-of-type(2) {
+                align-self: end;
+                line-height: 0.9;
+            }
+
+            > span:nth-of-type(3) {
+                align-self: start;
+                line-height: 0.9;
         }
     }
+}
+}
+
+@keyframes letterAnimation {
+    0% {
+        letter-spacing: 16px;
+        margin-right: -16px;
+    }
+    25% {
+        letter-spacing: 180px;
+        margin-right: -180px;
+    }
+    75% {
+        letter-spacing: 180px;
+        margin-right: -180px;
+    }
+    100% {
+        letter-spacing: 16px;
+        margin-right: -16px;
+    }
+}
 
     nav {
+        position: sticky;
         width: 100%;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(28, 102, 167, 0.2);
+        backdrop-filter: blur(8px);
+
+        transform: translateY(-100%);
+        opacity: 0;
+
+        animation: navigationShow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) both;
+        animation-timeline: scroll(root);
+
+        animation-range: 100vh 115vh;
 
         > ul {
             display: flex;
@@ -108,9 +165,15 @@ header {
             }
         }
     }
-}
 
-@keyframes slideIn {
+    @keyframes navigationShow {
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+/* @keyframes slideIn {
     0% {
         backdrop-filter: blur(20px);
         height: 100vh;
@@ -119,10 +182,10 @@ header {
         backdrop-filter: blur(8px);
         height: 25vh;
     }
-}
+} */
 
 main {
-    margin-top: 20em;
+    margin-top: 10em;
 }
 
     h2 {
@@ -255,6 +318,7 @@ main {
     height: 50px;
     background-color: rgba(28, 102, 167, 0.6);
     box-shadow: 0px 0px 50px rgba(28, 102, 167, 0.8);
+    /* mix-blend-mode: difference; */
     filter: blur(2px);
     border-radius: 50%;
     pointer-events: none;
