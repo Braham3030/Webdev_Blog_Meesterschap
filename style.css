@@ -65,17 +65,20 @@ header {
 
         > a {
             font-size: var(--h1-font);
-            letter-spacing: 180px;
-            margin-right: -180px;
+            letter-spacing: 200px;
+            margin-right: -200px;
             color: black;
             text-decoration: none;
             padding: 0;
+            cursor: none;
             display: grid;
             grid-template-columns: auto 1fr;
             grid-template-rows: 1fr 1fr;
             column-gap: 5px;
+            color: black;
+             text-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
 
-            transition: letter-spacing 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), margin-right 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+            transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
             animation: letterAnimation 1.2s cubic-bezier(0.33, 0.72, 0, 1.18);
 
             animation-timeline: scroll(root);
@@ -83,8 +86,7 @@ header {
             animation-range: 0vh 90vh;
 
             &:hover {
-                letter-spacing: 180px;
-                margin-right: -180px;
+                text-shadow: 5px 10px 50px rgba(255, 255, 255, 1);
             }
 
             > span:first-of-type {
@@ -328,7 +330,7 @@ main {
         width: 88%;
         font-size: var(--h2-font);
         color: rgba(28, 102, 167, 0.8);
-        text-shadow: 0px 10px 50px rgba(28, 102, 167, 1);
+        text-shadow: 5px 10px 50px rgba(28, 102, 167, 1);
     }
 
 
@@ -365,7 +367,7 @@ main {
             font-size: var(--h3-font);
             padding: 2em;
             font-weight: bold;
-            cursor: pointer;
+            /* cursor: pointer; */
             text-wrap: nowrap;
 
             transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
@@ -474,7 +476,7 @@ main {
         width: var(--BoxWidth);
         height: fit-content;
         background-color: var(--backgroundColorArticle);
-        padding: 2rem;
+        /* padding: 2rem; */
         border-radius: var(--border-radius-articleBox);
 
         transition: height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
@@ -486,9 +488,10 @@ main {
         > summary {
             list-style: none;
             font-size: var(--h3-font);
-            padding: 1em;
+            padding: 2em;
             font-weight: bold;
-            cursor: pointer;
+            /* cursor: pointer; */
+            text-wrap: nowrap;
 
             transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
         }
@@ -558,7 +561,7 @@ main {
         width: var(--BoxWidth);
         height: fit-content;
         background-color: var(--backgroundColorArticle);
-        padding: 2rem;
+        /* padding: 2rem; */
         border-radius: var(--border-radius-articleBox);
 
         transition: height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
@@ -570,9 +573,10 @@ main {
         > summary {
             list-style: none;
             font-size: var(--h3-font);
-            padding: 1em;
+            padding: 2em;
             font-weight: bold;
-            cursor: pointer;
+            /* cursor: pointer; */
+            text-wrap: nowrap;
 
             transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
         }
