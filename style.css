@@ -64,8 +64,8 @@ header {
 
         > a {
             font-size: var(--h1-font);
-            letter-spacing: 16px;
-            margin-right: -16px;
+            letter-spacing: 180px;
+            margin-right: -180px;
             color: black;
             text-decoration: none;
             padding: 0;
@@ -76,6 +76,10 @@ header {
 
             transition: letter-spacing 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), margin-right 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
             animation: letterAnimation 1.2s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+            animation-timeline: scroll(root);
+
+            animation-range: 0vh 90vh;
 
             &:hover {
                 letter-spacing: 180px;
@@ -105,6 +109,13 @@ header {
 }
 
 @keyframes letterAnimation {
+    to {
+        letter-spacing: 16px;
+        margin-right: -16px;
+    }
+}
+
+/* @keyframes letterAnimation {
     0% {
         letter-spacing: 16px;
         margin-right: -16px;
@@ -121,7 +132,7 @@ header {
         letter-spacing: 16px;
         margin-right: -16px;
     }
-}
+} */
 
     .mainNav {
         position: sticky;
@@ -391,7 +402,7 @@ main {
     margin: 0 auto;
     width: 90%;
 
-    .weeklyNerd1, .weeklyNerd2, .weeklyNerd3 {
+    .weeklyNerd1, .weeklyNerd2, .weeklyNerd3, .weeklyNerd4, .weeklyNerd5, .weeklyNerd6{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -417,6 +428,84 @@ main {
             transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
         }
 
+        > h3 {
+            font-size: var(--h3-font);
+        }
+
+        > p {
+            font-size: var(--p-font);
+            margin-top: 0.5em;
+
+            transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        }
+
+        > ul {
+            > li {
+                font-size: var(--p-font);
+                margin-top: 0.5em;
+
+                transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+            }
+        }
+    }
+
+        > details[open] {
+            padding: 2em;
+            --h3-font: 4rem;
+            --p-font: 2rem;
+
+            > summary {
+                padding: 0;
+            }
+        }
+
+        &:has(details[open]) {
+            --BoxWidth: 100%;
+            --border-radius-articleBox: 24px;
+            --backgroundColorArticle: rgba(28, 102, 167, 0.6);
+        }
+    }
+}
+
+.theWebYouWantContainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5em;
+    margin: 0 auto;
+    width: 90%;
+
+    .theWebYouWant1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--BoxWidth);
+        height: fit-content;
+        background-color: var(--backgroundColorArticle);
+        padding: 2rem;
+        border-radius: var(--border-radius-articleBox);
+
+        transition: height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+        > details {
+            padding: 0em;
+            width: 100%;
+            
+        > summary {
+            list-style: none;
+            font-size: var(--h3-font);
+            padding: 1em;
+            font-weight: bold;
+            cursor: pointer;
+
+            transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+        }
+
+        > h3 {
+            font-size: var(--h3-font);
+        }
+
         > p {
             font-size: var(--p-font);
             margin-top: 0.5em;
@@ -440,22 +529,9 @@ main {
             --border-radius-articleBox: 24px;
             --backgroundColorArticle: rgba(28, 102, 167, 0.6);
         }
-
-        /* > h3 {
-            margin: 0;
-            font-size: var(--h3-font);
-        }
-        > h4 {
-            margin: 0;
-            font-size: var(--h4-font);
-        }
-        > p {
-            margin: 0;
-            font-size: var(--p-font);
-        } */
     }
 }
-
+/* 
 .theWebYouWantContainer {
     display: flex;
     align-items: center;
@@ -480,7 +556,7 @@ main {
             font-size: var(--p-font);
         }
     }
-}
+} */
 
 /* MouseGlowmode */
 
