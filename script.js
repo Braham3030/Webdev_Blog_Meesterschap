@@ -89,14 +89,15 @@ clickableItems.forEach((item) => {
 
         const itemRadius = window.getComputedStyle(item).borderRadius;
 
-        glow.style.transition = "all 0.6s cubic-bezier(0.33, 0.72, 0, 1.18)";
+        glow.style.transition = "width 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), height 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), background-color 1.2s cubic-bezier(0.33, 0.72, 0, 1.18), filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18)";
 
         glow.style.width = `${rect.width + 4}px`;
         glow.style.height = `${rect.height + 4}px`;
-        glow.style.borderRadius = itemRadius;
+        glow.style.borderRadius = itemRadius === "0px" ? "8px" : itemRadius;
         glow.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-        glow.style.filter = "brightness(1.5)";
+        glow.style.filter = "brightness(1.75)";
 
+        // Center the glow on the item
         glow.style.left = `${rect.left + rect.width / 2}px`;
         glow.style.top = `${rect.top + rect.height / 2}px`;
     });
@@ -109,11 +110,12 @@ clickableItems.forEach((item) => {
         glow.style.height = "50px";
         glow.style.borderRadius = "50%";
         glow.style.backgroundColor = "rgba(28, 102, 167, 0.6)";
+        glow.style.filter = "brightness(1)";
 
         setTimeout(() => {
             if (!snapped) {
                 glow.style.transition = "none"
             }
-        }, 300);
+        }, 600);
     });
 })
