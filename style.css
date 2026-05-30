@@ -15,14 +15,15 @@ html {
     --h1-font: 15rem;
     --h2-font: 3rem;
     --h3-font: 2.5rem;
-    --h4-font: 1.6rem;
+    --h4-font: 2rem;
+    --h5-font: 1.6rem;
     --p-font: 1.25rem;
     --nav-font: 1.5rem;
     --sideNav-font: 4rem;
 
     --border-radius-articleBox: 12px;
     --border-radius-nav: 8px;
-    --BoxWidth: 33%;
+    --BoxWidth: 100%;
     --backgroundColorArticle: rgba(28, 102, 167, 0.2);
 }
 
@@ -332,10 +333,13 @@ main {
 
 
 .profesionalGoalsContainer {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 5em; */
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 5em;
     margin: 0 auto;
     width: 90%;
@@ -393,16 +397,77 @@ main {
     }
 }
 
-.weeklyNerdContainer {
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    flex-direction: column;
+.vakkenContainer {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 5em;
     margin: 0 auto;
     width: 90%;
 
-    .weeklyNerd1, .weeklyNerd2, .weeklyNerd3, .weeklyNerd4, .weeklyNerd5, .weeklyNerd6{
+    > .vakInleiding, .vakBT, .vakCSS, .vakHackaton, .vakHCD, .vakAPI, .vakMeesterproef {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: var(--BoxWidth);
+        height: fit-content;
+        background-color: var(--backgroundColorArticle);
+        padding: 2rem;
+        border-radius: var(--border-radius-articleBox);
+
+        > h3 {
+            font-size: var(--h3-font);
+            margin-top: 0;
+        }
+
+        .iFrameContainer {
+            position: relative;
+            width: 100%;
+            height: 30em;
+            overflow: hidden;
+            margin-top: 1em;
+            border-radius: var(--border-radius-articleBox);
+            transform: scale(1);
+            
+            transition: transform 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+        > iFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            border: none;
+            transform: scale(0.5);
+            transform-origin: top left;
+        }
+
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
+
+        > p {
+            font-size: var(--p-font);
+            margin-top: 0.5em;
+        }
+    }
+
+}
+
+.weeklyNerdContainer {
+    /* display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5em; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5em;
+    margin: 0 auto;
+    width: 90%;
+
+    .weeklyNerd1, .weeklyNerd2, .weeklyNerd3, .weeklyNerd4, .weeklyNerd5, .weeklyNerd6, .weeklyNerd7, .weeklyNerd8 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -432,6 +497,13 @@ main {
             font-size: var(--h3-font);
         }
 
+        > h4 {
+            font-size: var(--h4-font);
+        }
+        > h5 {
+            font-size: var(--h5-font);
+        }
+
         > p {
             font-size: var(--p-font);
             margin-top: 0.5em;
@@ -439,7 +511,7 @@ main {
             transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
         }
 
-        > ul {
+        > ul, ol {
             > li {
                 font-size: var(--p-font);
                 margin-top: 0.5em;
@@ -452,7 +524,7 @@ main {
         > details[open] {
             padding: 2em;
             --h3-font: 4rem;
-            --p-font: 2rem;
+            --p-font: 1.6rem;
 
             > summary {
                 padding: 0;
@@ -468,10 +540,13 @@ main {
 }
 
 .theWebYouWantContainer {
-    display: flex;
+    /* display: flex;
     align-items: stretch;
     justify-content: flex-start;
     flex-direction: column;
+    gap: 5em; */
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 5em;
     margin: 0 auto;
     width: 90%;
@@ -580,8 +655,33 @@ main {
 
 
 @media (min-width: 1000px) {
-    .profesionalGoalsContainer, .weeklyNerdContainer, .theWebYouWantContainer {
-        flex-direction: column;
-        align-items: stretch;
+    .profesionalGoalsContainer, .vakkenContainer, .weeklyNerdContainer, .theWebYouWantContainer {
+        /* flex-direction: column; */
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+
+        transition: grid-template-columns 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+    }
+
+    .profesionalGoalsContainer:has(> *:nth-child(odd) details[open]),
+    .weeklyNerdContainer:has(> *:nth-child(odd) details[open]),
+    .vakkenContainer:has(> *:nth-child(odd) details[open]),
+    .theWebYouWantContainer:has(> *:nth-child(odd) details[open]) {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .profesionalGoalsContainer:has(> *:nth-child(even) details[open]),
+    .weeklyNerdContainer:has(> *:nth-child(even) details[open]),
+    .vakkenContainer:has(> *:nth-child(even) details[open]),
+    .theWebYouWantContainer:has(> *:nth-child(even) details[open]) {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    /* The details that is alone in one row, will take the full width */
+    .profesionalGoalsContainer > *:last-child:nth-child(odd),
+    .weeklyNerdContainer > *:last-child:nth-child(odd),
+    .vakkenContainer > *:last-child:nth-child(odd),
+    .theWebYouWantContainer > *:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
     }
 }
