@@ -22,7 +22,7 @@
             </ul>
         </nav> -->
     <main>
-        <nav class="hamburgerMenuNav">
+        <!-- <nav class="hamburgerMenuNav">
             <input type="checkbox" id="menuToggle">
             <label for="menuToggle" class="hamburgerMenu">
                 <span></span>
@@ -34,13 +34,21 @@
                 <li>Weekly nerd</li>
                 <li>The web you want</li>
             </ul>
-        </nav>
+        </nav> -->
+        <details class="customizeBtn">
+            <summary>🖋️ <span>Customize</span></summary>
+            <label for="themeToggle" class="darkMode">
+                <input type="checkbox" id="themeToggle">
+                Dark mode
+            </label>
+        </details>
         <nav class="sideNav">
             <ul>
-                <li>
+                <li><a href="#profesionalGoalH2">
                     🧐
+                    </a>
                 </li>
-                <li>
+                <li><a href="#"></a>
                     📚
                 </li>
                 <li>
@@ -118,15 +126,15 @@
             </article>
         </article>
         <h2>Vakken</h2>
-        <article class="vakkenContainer">
-            <article class="vakInleiding">
+        <article class="subjectsContainer">
+            <article class="subjectInleiding">
                 <h3>Inleiding Web development</h3>
                     <div class="iFrameContainer">
                         <iFrame src="https://braham3030.github.io/Web_Dev_Inleiding/" loading="lazy" scrolling="no" title="Inleiding website voor de minor"></iFrame>
                     </div>
                 <p>Bij het vak "inleding web development" heb ik mijn huidige kennis van html/css en javascript toegepast. Hierbij heb ik data uit de api gehaald om te tonen in mijn website. De API data bevat de namen en verdere informatie van de leerlingen en docenten uit de minor.</p>
             </article>
-            <article class="vakBT">
+            <article class="subjectBT">
                 <h3>Browser Technologies</h3>
                     <div class="iFrameContainer">
                         <iFrame src="https://fake-belastingsdienst-form.onrender.com/" loading="lazy" scrolling="no" title="Fake belastingsdienst formulier in de styling van NS"></iFrame>
@@ -138,7 +146,7 @@
                     Bij dit vak heb ik veel gebruik gemaakt van formulieren. Het invullen en verwerken van formulieren bevat veel UX elementen die gebruikers moeten kunnen begrijpen. Ook is het belangrijk dat de (eventuele) fouten duidelijk zichtbaar worden weergegeven met een goede uitleg erover.
                 </p>
             </article>
-            <article class="vakCSS">
+            <article class="subjectCSS">
                 <h3>CSS control panel</h3>
                     <div class="iFrameContainer">
                         <iFrame src="https://css-controlpane-airplane.onrender.com/" loading="lazy" scrolling="no" title="Interactieve CSS control panel van een vliegtuig cockpit"></iFrame>
@@ -147,7 +155,7 @@
                         Ik heb bij het vak CSS veel CSS elementen gebruikt om interactie op de website mogelijk te maken. Hierbij was de challenge om <strong>geen</strong> javascript te gebruiken, maar alleen CSS. Dit was een leuke uitdaging, omdat er veel mogelijkheden zijn met CSS om interactie mogelijk te maken. Zo heb ik bijvoorbeeld gebruik gemaakt van "checkboxes" om de interactie mogelijk te maken. Ook heb ik veel gebruik gemaakt van "transitions" en "animations" om de interactie nog beter te maken voor de gebruiker. Ook heb ik geleerd om in CSS nesting te gebruiken, door te nesten houd je elementen bij elkaar en is het makkelijker om de code terug te lezen.
                     </p>
             </article>
-            <article class="vakHackaton">
+            <article class="subjectHackaton">
                 <h3>Hackaton website Nebula Explorer</h3>
                 <div class="iFrameContainer">
                     <iFrame src="https://hendrythomas.github.io/wdd-meesterschap-hackathon/" loading="lazy" scrolling="no" title="Website over de Nebula explorer"></iFrame>
@@ -156,7 +164,7 @@
                     Bij dit vak heb ik veel samengewerkt in een team van vier personen. Wij hebben in 1 week de website opgesteld. Hierbij hebben wij de kennis uit de vorige projecten gebruikt om een zo interactief mogelijk product te maken. De website is vooral gemaakt voor UI, en geen UX. Dit betekent dat de gebruiksvriendelijkheid van de website minder van te pas is gekomen.
                 </p>
             </article>
-            <article class="vakHCD">
+            <article class="subjectHCD">
                 <h3>Human Centered Design website</h3>
                 <div class="iFrameContainer">
                     <iFrame src="https://braham3030.github.io/HCD_WebDev/" loading="lazy" scrolling="no" title="Website speciaal gemaakt voor 1 gebruiker. De gebruiker is in dit geval blind"></iFrame>
@@ -165,7 +173,7 @@
                     Bij het vak Human Centered Design (HCD) heb ik geleerd om een website te maken die een hele andere richting opgaat dan de standaard regels van het maken van websites. De website werd steeds gemaakt aan de hand van user tests met een blind persoon. Deze persoon gaf elke week feedback op het werk, waarna er nieuwe itteraties gemaakt werden. Een itteratie die ik bijvoorbeeld heb gemaakt zijn de dikke borders op de website. De testpersoon vond het namelijk fijn om dikke borders te hebben op de website. Dit komt doordat de gebruiker een heel kleine beetje zicht heeft, deze zicht gebruikt de gebruiker om meer informatie uit zijn omgeving te kunen halen.
                 </p>
             </article>
-            <article class="vakAPI">
+            <article class="subjectAPI">
                 <h3>API NL Transit</h3>
                 <div class="iFrameContainer">
                     <iFrame src="https://nl-transit.onrender.com/" loading="lazy" scrolling="no" title="NL transit website met interactieve buslijnen."></iFrame>
@@ -443,6 +451,19 @@
                         <li>Werken met AI</li>
                         <li>A tot Y</li>
                     </ol>
+                </details>
+            </article>
+            <article class="weeklyNerd9">
+                <details>
+                    <summary>De Voorhoede</summary>
+                    <p>
+                        Het maken van digitale producten heeft fysieke impact op de mens. Zo kun je mooie animaties maken op het web en goed aanklikbare items maken, deze items kunnen voor sommige mensen niet goed gebruikt worden. Hierdoor kan het voorkomen dat een gebruiker zijn digitaal product met high contrast mode gebruikt. Als de gebruiker dan de animatie wilt zien, dan moet de high contrast mode uit, wat weer leidt tot last van de ogen.
+                    </p>
+                    <h4>Peter</h4>
+                    <p>
+                        Peter is kernteamlid voor NL Design System. Hij gebruikt Astro om de website opnieuw te ontwikkelen. Dit inverband met component gebruikt. Het gebruiken van componenten op websites is heel handige, omdat zo stukken van pagina's hergebruikt kunnen worden op andere plaatsen. Ook is het gebruik van componenten efficient in gebruik.
+                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!NOG!!!!!!!!!!!!!!!NIET!!!!!!!!!!!!!!!!!!AF!!!!!!!!!!!!!!!!!!!!!!!
+                    </p>
                 </details>
             </article>
         </article>
