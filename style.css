@@ -225,6 +225,8 @@ main {
     animation-range: 100vh 115vh;
 
     > ul {
+        position: relative;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -277,29 +279,30 @@ main {
     transition: left 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), transform 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), opacity 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
-.sideNav > ul::before {
+.sideNav::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 2.5vw;
+    left: 50%;
+    transform: translateX(-50%);
     width: 4px;
     height: 100%;
     background-color: grey;
     z-index: -1;
 }
 
-.sideNav > ul::after {
+.sideNav::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 2.5vw;
+    left: 50%;
     width: 4px;
     height: 100%;
     background-color: blue;
     z-index: 0;
 
     transform-origin: top;
-    transform: scaleY(0);
+    transform: translateX(-50%) scaleY(0);
 
     animation: fillPath 1s cubic-bezier(0.33, 0.72, 0, 1.18) forwards;
     animation-timeline: scroll(root);
@@ -309,7 +312,7 @@ main {
 
 @keyframes fillPath {
     to {
-        transform: scaleY(1);
+        transform: translateX(-50%) scaleY(1);
     }
 }
 
