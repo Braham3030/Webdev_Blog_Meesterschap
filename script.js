@@ -78,7 +78,7 @@ iFrames.forEach((iframe) => {
 
 // Clickable items cursor styling
 
-const clickableItems = document.querySelectorAll("main > a, button, details > summary, iFrame");
+const clickableItems = document.querySelectorAll("main > a, button, details > summary, iFrame, label");
 
 clickableItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
