@@ -361,3 +361,15 @@ Convince leadership
 Measure success
 
 
+# Product biografie
+
+Mijn taak tijdens het meesterproef project was voornamelijk om de infrastructuur van de website te regelen. Zo ben ik veranwoordelijk voor het linken van de pagina's met elkaar, het opstellen van pagina's en het maken van de skeleton voor de pagina's om aan te kunnen werken. Ook heb ik de animaties en transities tussen de pagina's en op de pagina zelf geregeld en optimized.
+
+<img width="1429" height="2467" alt="image" src="https://github.com/user-attachments/assets/db9a7797-aedd-4908-80d3-106fcffa1e2b" />
+
+Ik heb ook gezorgd dat de performance van de website optimaal blijft werken. Hiervoor heb ik vele performane verbeteringen toegepast. Bijvoorbeeld het preloaden van images, zodat de images niet lang hoeven te laden. Ook het aanpassen van animaties per pagina, zodat de content in kan laden, zonder dat de gebruiker hier last van heeft. Het schalen van de images heeft hier ook een rol gespeeld. De images werden geleverd in een vrij groot formaat, waardoor het laden van de images op de pagina, erg veel tijd in beslag nam. Deze heb ik verkleind en zo geoptimaliseerd.
+
+Om de optimalisatie verder te verbeteren heb ik PWA toegevoegd. Hiermee werkt de website ook offline. Dit verbeterd de performance, omdat de website, bij binnenkomst, al wordt ingeladen en opgeslagen in de cache van de browser. Hierdoor worden plaatjes al van te voren geladen, en ontstaat er zo geen sloom inladen van plaatjes meer. Ook de minigames en andere elementen worden hierin meegenomen, zodat de performance optimized blijft.
+
+<img width="1015" height="1235" alt="image" src="https://github.com/user-attachments/assets/6f7946f8-81a0-4031-9497-fc7b605c7157" />
+
