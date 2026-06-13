@@ -8,21 +8,34 @@ let snapped = false;
 let snappedItem = null;
 // const card = document.querySelector(".glass-card");
 
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+
 document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    });
+
+    const updateGlowPosition = () => {
     if (!snapped) {
-	glow.style.left = e.clientX + "px";
-	glow.style.top = e.clientY + "px";
+	glow.style.left = mouseX + "px";
+	glow.style.top = mouseY + "px";
     } else if (snappedItem) {
         const rect = snappedItem.getBoundingClientRect();
 
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
 
-        const distanceX = e.clientX - centerX;
-        const distanceY = e.clientY - centerY;
+        const distanceX = mouseX - centerX;
+        const distanceY = mouseY - centerY;
 
         glow.style.left = `${centerX + distanceX * 0.2}px`;
         glow.style.top = `${centerY + distanceY * 0.2}px`;
+
+        // Keeps updating the glow size to match the snapped item
+        glow.style.width = `${rect.width + 4}px`;
+        glow.style.height = `${rect.height + 4}px`;
     }
 
 	// if (card) {
@@ -33,7 +46,12 @@ document.addEventListener("mousemove", (e) => {
 	// 	card.style.setProperty("--mouse-x", `${x}px`);
 	// 	card.style.setProperty("--mouse-y", `${y}px`);
 	// }
-});
+    
+    // With this line, the glow will follow and update the position on every frame change
+    requestAnimationFrame(updateGlowPosition);
+};
+requestAnimationFrame(updateGlowPosition);
+
 
 document.addEventListener("mouseleave", () => {
     if (!snapped) {

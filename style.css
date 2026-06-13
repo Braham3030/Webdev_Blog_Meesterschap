@@ -1016,17 +1016,18 @@ body:has(#themeToggle:checked) {
 
     filter: blur(18px);
     z-index: 1;
+    transform: translate(-50%, -50%);
 
     animation: smokeRise 3s ease forwards;
 }
 
 @keyframes smokeRise {
     0% {
-        transform: translateY(-50%, -50%) scale(3);
+        transform: translate(-50%, -50%) scale(1);
         opacity: 0.8;
     }
     100% {
-        transform: translateY(-50%, -150%) scale(6);
+        transform: translate(-50%, -150%) scale(2);
         opacity: 0;
     }
 }
