@@ -78,6 +78,7 @@ iFrames.forEach((iframe) => {
 
 // Clickable items cursor styling
 
+const clickableItems = document.querySelectorAll("main > a, button, details > summary, iFrame, label, .sideNav > ul > li, .customizeBtn > div > input[type='range']");
 const clickableItems = document.querySelectorAll("main > a, button, details > summary, iFrame, label, .sideNav > ul > li");
 
 clickableItems.forEach((item) => {

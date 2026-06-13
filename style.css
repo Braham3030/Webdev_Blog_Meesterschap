@@ -9,17 +9,28 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     cursor: none;
+    font-size: calc(var(--baseFontSize, 16)*1px);
 }
 
 :root {
-    --h1-font: 15rem;
+    /* --h1-font: 15rem;
     --h2-font: 3rem;
     --h3-font: 2.3rem;
     --h4-font: 2rem;
     --h5-font: 1.6rem;
     --p-font: 1.25rem;
     --customize-font: 1.5rem;
-    --sideNav-font: 4rem;
+    --sideNav-font: 4rem; */
+
+    --font-scale: calc(var(--baseFontSize, 16) / 16);
+    --h1-font: calc(15rem * var(--font-scale));
+    --h2-font: calc(3rem * var(--font-scale));
+    --h3-font: calc(2.3rem * var(--font-scale));
+    --h4-font: calc(2rem * var(--font-scale));
+    --h5-font: calc(1.6rem * var(--font-scale));
+    --p-font: calc(1.25rem * var(--font-scale));
+    --customize-font: calc(1.5rem * var(--font-scale));
+    --sideNav-font: calc(4rem * var(--font-scale));
 
     --border-radius-articleBox: 12px;
     --border-radius-nav: 8px;
@@ -249,7 +260,9 @@ main {
 
     > summary {
         border-radius: var(--border-radius-customizeBtn);
-        padding: 1em;
+        padding: 0;
+        width: 100%;
+        height: 100%;
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -278,13 +291,23 @@ main {
     --customize-font: 1.8rem;
     --border-radius-customizeBtn: 12px;
     justify-content: flex-start;
-    width: 10em;
-    height: 8em;
+    /* width: 10em;
+    height: 8em; */
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 1.5em;
+    gap: 1em;
 
     /* padding: 1em; */
 
     > summary {
-        padding: 1em 2em;
+        /* padding: 1em 2em; */
+        padding: 0;
+        width: auto;
+        height: auto;
+        margin-bottom: 0.5em;
+        justify-content: flex-start;
 
         > span {
             opacity: 1;
@@ -296,6 +319,9 @@ main {
 }
 
 .customizeBtn > .darkMode {
+    display: block;
+    width: max-content;
+    margin-bottom: 1em;
     padding: 1em;
     border-radius: var(--border-radius-customizeBtn);
     border: 2px solid red;
@@ -374,7 +400,13 @@ main {
 
         transition: right 0.2s cubic-bezier(0.33, 0.72, 0, 1.18), transform 0.2s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), height 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), border-radius 0.4s cubic-bezier(0.33, 0.72, 0, 1.18), filter 0.4s cubic-bezier(0.33, 0.72, 0, 1.18);
     }
-    
+}
+
+.customizeBtn > .fontSlider {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding-left: 0;
 }
 
 
@@ -884,32 +916,51 @@ main {
         }
     }
 }
-/* 
-.theWebYouWantContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 1em;
+
+
+.quotesContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5em;
     margin: 0 auto;
     width: 90%;
 
-    .theWebYouWant1 {
-        background-color: rgba(28, 102, 167, 0.2);
-        padding: 1rem;
+    .quote1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: var(--Box-width);
+        height: fit-content;
+        background-color: var(--background-color-article);
         border-radius: var(--border-radius-articleBox);
-        width: 45%;
+
+        transition: height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18), border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18), background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
 
         > h3 {
-            margin: 0;
+            list-style: none;
             font-size: var(--h3-font);
+            color: var(--color);
+            padding: 1em 2em;
+            font-weight: bold;
+            /* cursor: pointer; */
+            text-wrap: nowrap;
         }
+
         > p {
-            margin: 0;
+            color: var(--color);
             font-size: var(--p-font);
+            margin-top: 0.5em;
+
+            transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
         }
     }
-} */
+}
+
+
+
+
+
+
 
 
 /* Themes */
@@ -924,9 +975,11 @@ body:has(#themeToggle:checked) {
 
     --h3-color: rgba(152, 195, 232, 0.8);
     --h3-text-shadow: 5px 10px 50px rgba(152, 195, 232, 1);
-
-    
 }
+
+/* Fontslider */
+
+
 
 /* MouseGlowmode */
 
@@ -1003,7 +1056,8 @@ body:has(#themeToggle:checked) {
     .profesionalGoalsContainer:has(> *:nth-child(odd) details[open]),
     .weeklyNerdContainer:has(> *:nth-child(odd) details[open]),
     .subjectsContainer:has(> *:nth-child(odd) details[open]),
-    .theWebYouWantContainer:has(> *:nth-child(odd) details[open]) {
+    .theWebYouWantContainer:has(> *:nth-child(odd) details[open]),
+    .quotesContainer:has(> *:nth-child(odd) details[open]) {
         grid-template-columns: 3fr 1fr;
     }
 
