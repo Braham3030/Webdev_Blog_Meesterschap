@@ -361,6 +361,95 @@ Convince leadership
 Measure success
 
 
+
+Voorhoede
+Marlijn
+
+Marlijn heeft veel gewerkt met animaties voor haar project voor een techno bedrijf dgtl-festival. Hierbij heeft ze weinig met styling gedaan
+
+Effecten creëren met nieuwe ideeën.
+De klant kan achteraf nog ideeën laten aanpassen. Bijvoorbeeld dat de tekst wel mooi is gemaakt, maar dat het ook goed leesbaar moet blijven.
+
+Hoe met weinig tools iets vets te maken.
+
+Er ontstaan natuurlijk ook bugs voor de klant. Deze worden achteraf natuurlijk opgelost.
+
+Video’s werken beter dan gifjes.
+
+Technische dingen uitleggen aan mensen die minder technisch zijn hoort ook bij de baan.
+
+- code classes 
+- Intervisies
+- Plugins bouwen
+- Blog posts
+
+
+Peter
+Accesibility specialist
+
+Digitale werk heeft fysieke impact op mensen
+
+Kern teamlid voor NL Design system
+
+Wilt het maken in Astro, zodat het met componenten gemaakt kan worden en ook efficiënter werkt.
+
+Via NL Design System kunnen er verschillende componenten opgevraagd worden. Bijvoorbeeld een sidebar van gemeente Den Haag. Dit kan gedaan worden door een pull request aan te vragen. Hiervoor is er een call nodig.
+
+Er moet ook goed ingelezen worden over hoe de componenten gebruikt wordt en wat er wel en niet gedaan mag worden ermee.
+
+Design tokens zijn de css waardes die aan kunnen passen. Bijvoorbeeld in de ::root. Hier kunnen variabelen gedefinieerd worden en zo de style aangepast worden naar hetgeen dat de gebruiker/developer wilt.
+
+20% bovenop het accessible maken van een website.
+
+Altijd nadenken over capaciteit van anderen. Niet iedereen heeft de snelste telefoon op laptop.
+
+
+
+
+Met PWA kun je offline dingen storen en later doorsturen naar de server, zodat de nieuwe wijzigingen op de pagina bijvoorbeeld opgeslagen kan worden.
+
+Kernprincipes:
+* Start bij”geen verbinding”
+* Lokaal opslaan
+
+Gebruikersvoordelen:
+* Altijd toegang (vliegtuig/buitengebied)
+* Snellere interface 
+
+Dit bespaart data en batterijverbruik, omdat er eerst opgeslagen wordt op het device. Dit wordt later in 1 keer doorgestuurd.
+
+Met een service worker kun je tussen je website en de server laten communiceren. Bijvoorbeeld als er geen internet verbinding is, wat moet er dan gebeuren?
+
+Er wordt veel gewerkt met local storage om de data tijdelijk in op te slaan. 
+
+Lokaal opslaan betekent dat de website op dat moment niet afhankelijk is van een server.
+
+1. Service workers & caching
+Intelligente tussenlaag voor netwerverzoeken
+
+2. Local storage & database
+ IndexdDB voor complexe structuren, localstorage voor tijdelijke data
+
+3. (Optioneel) synchronisatieframeworks
+Firebase firestore, AWS appSync of Realm automatiseren wachtrij 
+
+
+Implementatie best practice
+
+1. Progressive enhancement
+2. Cache invalidation
+3. Background sync
+4. Error handling & retries
+5. Performance optimization 
+
+
+
+
+
+
+
+
+
 # Product biografie
 
 Mijn taak tijdens het meesterproef project was voornamelijk om de infrastructuur van de website te regelen. Zo ben ik veranwoordelijk voor het linken van de pagina's met elkaar, het opstellen van pagina's en het maken van de skeleton voor de pagina's om aan te kunnen werken. Ook heb ik de animaties en transities tussen de pagina's en op de pagina zelf geregeld en optimized.
