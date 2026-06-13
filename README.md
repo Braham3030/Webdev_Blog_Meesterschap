@@ -445,7 +445,92 @@ Implementatie best practice
 
 
 
+The web you want 2
 
+Op deze dag hebben wij te horen gekregen van ….. Hier heb ik geleerd dat ….. The web you want vond ik interessant om mee te krijgen, omdat hier veel werd verteld over ….. 
+
+Leonie Watson lives AI usage. Zij is blind, en gebruikt AI graag om relevante informatie te vinden op het web. Inplaats van alles door te lezen en de relevante informatie te vinden, kan AI dit direct vinden voor haar.
+
+Bij product omschrijving kan de screenreader minder informatie en minder goede informatie overbrengen. Om het product of een plaatje goed te laten omschrijven, kan AI hier goed bij helpen. Omdat AI alle relevante informatie op het web gebruikt om bepaalde elementen te kunnen beschrijven.
+
+In de echte wereld kan AI helpen in de vorm van het beschrijven van de omgeving. Bijvoorbeeld door Meta AI glasses. Deze bril bevat een kleine camera, deze camera wordt door AI gebruikt om de omgeving te kunnen beschrijven of andere vragen te beantwoorden.
+
+
+AI is problematisch vanwege de bedrijven die de AI geven. AI compenseert met veel activiteiten die normaal gedaan worden door de persoon zelf. De descriptie bij plaatjes of andere labels die belangrijk zijn voor een screenreader zijn niet altijd toegankelijk gemaakt. Veel missen een description of hebben een description die niet goed aangeven wat er te zien is. AI helpt dan om de plaatjes wel te beschrijven.
+
+Als er gefaald wordt om een bepaalde product te maken, dan kan er gekozen worden om het door AI te laten maken.
+
+AI kan helpen met navigeren, met het helpen beschrijven van pagina’s. “AI is an interpreter”.
+
+AI compenseert het web op gebieden dat het web faalt. Bijvoorbeeld de plaatjes die geen goede of helemaal geen beschrijven hebben. Het web faalt, doordat de mens niet goed let op accesibility valkuilen.
+
+Browser is an intermediary. Het gebruikt de code om content te laten zien op het web.
+
+Het probleem van AI komt doordat AI veel van het denkwijzen had kaapt. AI kan makkelijk valse data weergeven, waarbij de gebruiker dit makkelijk kan geloven. Mensen die teveel afhankelijk zijn van AI, kan dit gevaarlijk zijn.
+
+The web Leonie wants is one that does not need AI to compensate. Dat álle accesibility eisen op websites zijn toegepast en ook goed toegepast worden. Zodat AI niet over hoeft te nemen om de website te beschrijven.
+
+“Accesibility is resistence”
+
+Cyd Stumpel
+
+
+The web Cyd wants is open. Gebruik can veel interacties en animaties.
+
+De web is een plek om te experimenteren en om nieuwe dingen op te leren.
+
+Progressive enhancement gebruik is belangrijk om te gebruiken. Een voorbeeld is een roltrap, als de roltrap niet meer werkt dan kan dit alsnog gebruikt worden als een normale trap.
+
+Geacefull degradation.
+
+Core task. Het moet goed kunnen werken, en er moet nagedacht zijn over bepaalde features op de website. 
+
+HTML first! Probeer altijd via html alseert de pagina te maken. Als er bepaalde feutures zijn die niet gemaakt kunnen worden met HTML kan er JavaScript bijvoorbeeld gebruikt worden. Zelfde geldt met CSS.
+
+Semantics. Schrijf semantiek code
+
+Bij css, als er een fout wordt gemaakt in css dan wordt dat in css overgeslagen.
+
+Transition-delay: calc(sibling…)
+
+Probeer zoveel mogelijk JavaScript te vermijden. 
+
+De toekomst van het web ligt in de handen van de gebruikers. Zo moet er gezorgd worden voor performance, veiligheid en accesibility.
+
+Sara
+
+Het web van vroeger is aan het vervagen. De onderzoekers styling van vroeger wordt weer teruggebracht door verschillende designers op met web.
+
+Alle soorten kunst zou accessible moeten zijn voor de meeste mensen.
+
+Het gebruik van “reduced motion” kan ook in JavaScript gebruikt worden om zo de website accessible te behouden voor meer mensen.
+
+The “vibe” van de website geeft al aan het begin een beetje aan waar de website over zou kunnen gaan.
+
+Als een afbeelding veel voor je betekent. Vertel dan hoe je, je voelt. Geef een goede beschrijving van de “alt” tekst.
+
+Alle tekst online moet een screen reader voice hebben.
+
+Alt tekst hoort ook bij kunst. Alt tekst kan bijvoorbeeld als “poetic” gebruikt worden.
+
+Laat meer van je eigen persoonlijkheid zien in de beschrijvingen.
+
+
+Johannes
+
+Niet te verstaan
+Iets over camera’s?
+
+
+“Who needs drugs when you got CSS”
+
+Jeremy
+
+Vroeger was het gebruik van het “world wide web” gelimiteerd. Zo kon je niet elke kleur gebruiken. En was het gebruik van fonts ook niet te gebruiken.
+
+Internet explorer was de eerste browser die font files kon gebruiken.
+
+Vroeger moesten er elementen gemaakt worden via JavaScript om op de website te krijgen. Bijvoorbeeld de “video” en “audio” tag.
 
 
 
