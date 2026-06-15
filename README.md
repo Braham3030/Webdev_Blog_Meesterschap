@@ -547,3 +547,62 @@ Om de optimalisatie verder te verbeteren heb ik PWA toegevoegd. Hiermee werkt de
 
 <img width="1015" height="1235" alt="image" src="https://github.com/user-attachments/assets/6f7946f8-81a0-4031-9497-fc7b605c7157" />
 
+
+
+
+
+
+
+
+
+
+
+
+
+Productbiografie
+
+Leerdoel 1: prototyping
+Ik wil goede prototypes kunnen maken, waarbij ik goede bruikbare feedback goed verwerk in mijn projecten. Ook wil ik de gemaakte prototypes goed kunnen presenteren aan anderen, zodat ik betere en gerichte feedback kan ontvangen over het gemaakte werk.
+ 
+
+Leerdoel 2: samenwerken
+Ik wil goed kunnen samenwerken met anderen, waarbij ik goed kan communiceren en mijn ideeën duidelijk kan overbrengen. Ook wil ik goed kunnen luisteren naar anderen en hun ideeën serieus nemen, zodat we samen tot betere oplossingen kunnen komen.
+ 
+
+Leerdoel 3: Oriënteren en begrijpen
+Ik wil de gebruiker goed kunnen Oriënteren en begrijpen, zodat ik user interfaces kan maken die goed aansluiten bij de gebruiker(s). Op deze manier kan de website de pijnpunten van gebruikers omzeilen.
+ 
+Week 1:
+
+Ik ben begonnen met het bespreken van de leerdoelen. Ik wil groeien in de gekozen leerdoelen doormiddel van het meesterschap project. Hierbij helpt iedereen in het team elkaar om de leerdoelen te behalen. 
+
+In deze week hebben we ook een brainstorm sessie gehouden en ook designs gemaakt, zodat er in de tweede week de code geschreven kan worden. Zo hebben wij een flowchart gemaakt en designs in Figma gemaakt, zodat de structuur en de designs duidelijk zijn 
+
+Week 2:
+
+In de tweede week is er gewerkt aan de code. Zo is de GitHub opgesteld en zijn er ook afspraken gemaakt over branch gebruik. Zo hebben wij een “dev” branch aangemaakt. Via deze branch wordt er iedere keer naar de “main” samengevoegd. Dit hebben wij gedaan om fouten te voorkomen, en zo min mogelijk conflicten te creëren.
+
+Ik heb mij vooral gefocust op de lay-out infrastructuur van de pagina’s. Zo heb ik de animaties tussen pagina’s, en ook het linken van de ene pagina met de andere pagina, er in verwerkt.
+
+Week 3:
+
+Deze week heb ik gekeken naar performance verbeteringen van de website. Ook het offline laten werken van de website is een functie die ik erbij toe wilde voegen. Ik heb de performance verbeterd door de offline functie te implementeren. De offline functie slaat de website op in de cache van de browser, zodat de browser deze in offline mode kan weergeven. Hierdoor hoeven de plaatjes niet steeds opnieuw gezocht te worden als er naar de pagina genavigeerd wordt.
+
+Daarnaast heb ik mij ook bezig gehouden met de terugknop. De terugkoppeling was eerst “dom” gemaakt. De knop zou in elk geval naar de vorige pagina navigeren. Zo kan de gebruiker uit de website navigeren, als de gebruiker hierop klikt. Om dit recht te zetten heb ik elke pagina apart gelinkt met de knop. Zo is de knop bij klikken gelinkt met de juist pagina, en niet met de eerst vorige pagina in de rij.
+
+Week 4:
+
+Ik heb de website getest met een gebruiker in het werkveld. Hierdoor heb ik kunnen prototypen en zo ook de feedback uit de test kunnen halen die bruikbaar is voor ons product. Ok de prototype zo goed mogelijk te testen heb ik de gebruiker geobserveerd en ook vragen gesteld gerelateerd aan ons prototype. Ook heb ik de gebruiker de oude website laten zien, waarbij ik graag de inzicht tussen het nieuwe prototype en de oude website wil weten.
+
+Ik heb ook, aan de hand van de feedback van de user test, de teksten aangepast en rechtgezet samen met het team. Hierbij hebben wij de teksten formeler en beter gestructureerd op de website. 
+
+
+
+
+
+
+
+
+
+
+
