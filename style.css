@@ -625,7 +625,6 @@ main {
         justify-content: center;
         width: var(--Box-width);
         height: fit-content;
-        /* padding: 2rem; */
         border-radius: var(--border-radius-articleBox);
         background-color: var(--background-color-article);
 
@@ -697,36 +696,6 @@ main {
             color: var(--color);
             margin-top: 0;
         }
-
-        .iFrameContainer {
-            position: relative;
-            width: 100%;
-            height: 30em;
-            overflow: hidden;
-            margin-top: 1em;
-            border-radius: var(--border-radius-articleBox);
-            transform: scale(1);
-            box-shadow: 0px 0px 5px rgba(28, 102, 167, 0);
-            
-            transition: transform 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), box-shadow 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
-
-        > iFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 200%;
-            height: 200%;
-            border: none;
-            transform: scale(0.5);
-            transform-origin: top left;
-            
-        }
-
-        &:hover {
-            transform: scale(1.01);
-            box-shadow: 0px 0px 20px rgba(28, 102, 167, 0.8);
-        }
-    }
 
         > p {
             font-size: var(--p-font);
@@ -896,6 +865,60 @@ main {
 }
 
 
+
+
+
+.meesterproefContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5em;
+    margin: 0 auto;
+    width: 90%;
+
+    > .meesterproef {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: var(--Box-width);
+        height: fit-content;
+        background-color: var(--background-color-article);
+        padding: 2rem;
+        border-radius: var(--border-radius-articleBox);
+
+        > h3 {
+            font-size: var(--h3-font);
+            color: var(--color);
+            margin-top: 0;
+        }
+
+        > h4 {
+            font-size: var(--h4-font);
+            color: var(--color);
+        }
+
+        > ul {
+            > li {
+                font-size: var(--p-font);
+                color: var(--color);
+                margin-top: 0.5em;
+
+                transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+            }
+        }
+
+        > p {
+            font-size: var(--p-font);
+            color: var(--color);
+            margin-top: 0.5em;
+        }
+    }
+
+}
+
+
+
+
 .quotesContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -936,6 +959,36 @@ main {
 
 
 
+
+.iFrameContainer {
+            position: relative;
+            width: 100%;
+            height: 30em;
+            overflow: hidden;
+            margin-top: 1em;
+            border-radius: var(--border-radius-articleBox);
+            transform: scale(1);
+            box-shadow: 0px 0px 5px rgba(28, 102, 167, 0);
+            
+            transition: transform 0.8s cubic-bezier(0.33, 0.72, 0, 1.18), box-shadow 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
+        > iFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            border: none;
+            transform: scale(0.5);
+            transform-origin: top left;
+            
+        }
+
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0px 0px 20px rgba(28, 102, 167, 0.8);
+        }
+    }
 
 
 
