@@ -12,6 +12,9 @@ html {
   overflow-x: hidden;
 }
 
+/* For clamping the font */
+/* https://www.marcbacon.com/tools/clamp-calculator/ */
+
 :root {
   --font-scale: calc(var(--baseFontSize, 16) / 16);
   --h1-font: calc(clamp(3rem, -0.429rem + 13.714vw, 15rem) * var(--font-scale));
