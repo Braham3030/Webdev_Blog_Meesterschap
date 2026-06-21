@@ -847,11 +847,6 @@ main {
 }
 
 .theWebYouWantContainer {
-    /* display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 5em; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 5em;
