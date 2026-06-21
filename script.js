@@ -1,5 +1,3 @@
-console.log("Hello, World!");
-
 
 // Mouse glow effect
 
@@ -37,19 +35,11 @@ document.addEventListener("mousemove", (e) => {
         glow.style.width = `${rect.width + 4}px`;
         glow.style.height = `${rect.height + 4}px`;
     }
-
-	// if (card) {
-	// 	const rect = card.getBoundingClientRect();
-	// 	const x = e.clientX - rect.left;
-	// 	const y = e.clientY - rect.top;
-
-	// 	card.style.setProperty("--mouse-x", `${x}px`);
-	// 	card.style.setProperty("--mouse-y", `${y}px`);
-	// }
     
     // With this line, the glow will follow and update the position on every frame change
     requestAnimationFrame(updateGlowPosition);
 };
+
 requestAnimationFrame(updateGlowPosition);
 
 
