@@ -38,6 +38,8 @@ html {
   --h2-text-shadow: 5px 10px 50px rgba(28, 102, 167, 1);
   --background-color-header: rgba(28, 102, 167, 0.8);
   --background-color-sideNav: rgba(28, 102, 167, 0.2);
+  --background-color-customize: rgba(28, 102, 167, 0.8);
+  --sideNav-box-shadow: 20px 0px 100px rgba(28, 102, 167, 0.4);
 }
 
 body {
@@ -75,6 +77,8 @@ header {
   animation-timeline: scroll(root);
 
       animation-range: 0vh 90vh;
+
+      transition: background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
 
   > h1 {
     display: flex;
@@ -164,8 +168,8 @@ main {
   padding: 0em;
   width: 4rem;
   height: 4rem;
-  background-color: rgba(28, 102, 167, 0.8);
-  color: black;
+  background-color: var(--background-color-customize);
+  color: var(--color);
   font-size: var(--customize-font);
   font-weight: bold;
   border: none;
@@ -181,12 +185,14 @@ main {
     padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     width 0.5s cubic-bezier(0.33, 0.72, 0, 1.18),
     height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s;
+    backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s,
+    background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+    color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
 
   animation: customizeBtnShow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) both;
   animation-timeline: scroll(root);
 
-  animation-range: 80vh 115vh;
+  animation-range: 25vh 115vh;
 
   > summary {
     border-radius: var(--border-radius-customizeBtn);
@@ -240,7 +246,9 @@ main {
     padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     width 0.5s cubic-bezier(0.33, 0.72, 0, 1.18),
     height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s;
+    backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s,
+    background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+    color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
 
   > summary {
     padding: 0;
@@ -252,7 +260,6 @@ main {
     > span {
       opacity: 1;
       visibility: visible;
-      /* display: block; */
       width: 7rem;
 
       transition: width 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
@@ -432,7 +439,7 @@ main {
 
 .sideNav {
   background-color: var(--background-color-sideNav);
-  box-shadow: 20px 0px 100px rgba(28, 102, 167, 0.4);
+  box-shadow: var(--sideNav-box-shadow);
   min-width: 8vw;
   height: 100%;
   position: fixed;
@@ -450,6 +457,10 @@ main {
   animation: sideNavShow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) both;
   animation-timeline: scroll(root);
   animation-range: 34vh 115vh;
+
+  transition: 
+  background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+  box-shadow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
 
   > ul {
     position: relative;
@@ -489,6 +500,7 @@ main {
   &::after {
     --sideNav-font: 0.6rem;
     content: "Profesionele leerdoelen";
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -527,6 +539,7 @@ main {
   &::after {
     --sideNav-font: 0.6rem;
     content: "Vakken";
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -565,6 +578,7 @@ main {
   &::after {
     --sideNav-font: 0.6rem;
     content: "Weekly nerd";
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -604,6 +618,7 @@ main {
     --sideNav-font: 0.6rem;
     content: "The web \A you want";
     white-space: pre;
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -642,6 +657,7 @@ main {
   &::after {
     --sideNav-font: 0.6rem;
     content: "Meesterproef";
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -680,6 +696,7 @@ main {
   &::after {
     --sideNav-font: 0.6rem;
     content: "Quote";
+    color: var(--color);
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -727,6 +744,11 @@ h2 {
   font-size: var(--h2-font);
   color: var(--h2-color);
   text-shadow: var(--h2-text-shadow);
+
+  transition: 
+  font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+  color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+  text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
 .usageGoalH3 {
@@ -737,6 +759,11 @@ h2 {
   font-size: var(--h3-font);
   color: var(--h2-color);
   text-shadow: var(--h2-text-shadow);
+
+  transition: 
+  font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+  color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+  text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
 .profesionalGoalsContainer {
@@ -778,7 +805,8 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > p {
@@ -786,7 +814,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
     }
 
@@ -845,7 +875,8 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > p {
@@ -853,7 +884,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
     }
 
@@ -897,6 +930,13 @@ h2 {
     padding: 2rem 1rem 0rem 1rem;
     border-radius: var(--border-radius-articleBox);
 
+    transition:
+      height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+      width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+      padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+      border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+      background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
     > details {
       padding: 0em;
       width: 100%;
@@ -911,7 +951,8 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h4 {
@@ -924,7 +965,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > ul {
@@ -933,7 +976,9 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+          transition: 
+            font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+            color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
       }
     }
@@ -956,12 +1001,10 @@ h2 {
       font-size: var(--h3-font);
       color: var(--color);
       margin-top: 0;
-    }
 
-    > p {
-      font-size: var(--p-font);
-      color: var(--color);
-      margin-top: 0.5em;
+      transition: 
+        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
   }
 }
@@ -1012,22 +1055,35 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h3 {
         font-size: var(--h3-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h4 {
         font-size: var(--h4-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h5 {
         font-size: var(--h5-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > p {
@@ -1035,7 +1091,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > ul,
@@ -1045,7 +1103,9 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+          transition: 
+            font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+            color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
       }
     }
@@ -1103,7 +1163,8 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > p {
@@ -1111,7 +1172,9 @@ h2 {
         font-size: var(--p-font);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
     }
 
@@ -1149,10 +1212,21 @@ h2 {
     padding: 1rem;
     border-radius: var(--border-radius-articleBox);
 
+    transition:
+      height 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+      width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+      padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+      border-radius 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+      background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
+
     > h3 {
       font-size: var(--h3-font);
       color: var(--color);
       margin-top: 0;
+
+      transition: 
+        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
 
     > details {
@@ -1169,12 +1243,17 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h4 {
         font-size: var(--h4-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > ul {
@@ -1183,7 +1262,9 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+          transition: 
+            font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+            color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
       }
 
@@ -1192,7 +1273,9 @@ h2 {
         font-size: var(--p-font);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
     }
 
@@ -1251,22 +1334,35 @@ h2 {
 
         transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+          padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h3 {
         font-size: var(--h3-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h4 {
         font-size: var(--h4-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > h5 {
         font-size: var(--h5-font);
         color: var(--color);
+
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > p {
@@ -1274,7 +1370,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+        transition: 
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
 
       > ul,
@@ -1284,7 +1382,9 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+          transition: 
+            font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+            color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
       }
     }
@@ -1335,6 +1435,11 @@ h2 {
       padding: 1em 2em;
       font-weight: bold;
       text-wrap: nowrap;
+
+      transition:
+        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+        padding 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
 
     > p {
@@ -1342,7 +1447,9 @@ h2 {
       font-size: var(--p-font);
       margin-top: 0.5em;
 
-      transition: font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
+      transition: 
+        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
   }
 }
@@ -1395,6 +1502,8 @@ body:has(#themeToggle:checked) {
 
   --h3-color: rgba(152, 195, 232, 0.8);
   --h3-text-shadow: 5px 10px 50px rgba(152, 195, 232, 1);
+  --background-color-customize: rgba(37, 78, 113, 0.8);
+  --sideNav-box-shadow: 20px 0px 50px rgba(28, 102, 167, 1);
 }  
 
 
@@ -1538,6 +1647,7 @@ body:has(#themeToggle:checked) {
         opacity: 1;
         visibility: visible;
         display: block;
+        width: 8.8rem;
       }
     }
   }
