@@ -76,9 +76,9 @@ header {
 
   animation-timeline: scroll(root);
 
-      animation-range: 0vh 90vh;
+  animation-range: 0vh 90vh;
 
-      transition: background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+  transition: background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
 
   > h1 {
     display: flex;
@@ -144,9 +144,9 @@ header {
 }
 
 @keyframes slideOut {
-    to {
-        height: 50vh;
-    }
+  to {
+    height: 50vh;
+  }
 }
 
 main {
@@ -240,7 +240,7 @@ main {
   gap: 1em;
   backdrop-filter: blur(2px);
   box-shadow: 0 0 500px rgba(28, 102, 167, 1);
-  
+
   transition:
     background-color 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     border-radius 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
@@ -464,9 +464,9 @@ main {
   animation-timeline: scroll(root);
   animation-range: 34vh 115vh;
 
-  transition: 
-  background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
-  box-shadow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
+  transition:
+    background-color 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
+    box-shadow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18);
 
   > ul {
     position: relative;
@@ -733,7 +733,6 @@ main {
     opacity 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
-
 @keyframes sideNavShow {
   to {
     transform: translateX(0);
@@ -751,10 +750,10 @@ h2 {
   color: var(--h2-color);
   text-shadow: var(--h2-text-shadow);
 
-  transition: 
-  font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-  color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
-  text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
+  transition:
+    font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+    text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
 .usageGoalH3 {
@@ -766,10 +765,10 @@ h2 {
   color: var(--h2-color);
   text-shadow: var(--h2-text-shadow);
 
-  transition: 
-  font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-  color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
-  text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
+  transition:
+    font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
+    text-shadow 1s cubic-bezier(0.33, 0.72, 0, 1.18);
 }
 
 .profesionalGoalsContainer {
@@ -820,9 +819,9 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: 
-        font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-        color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
+        transition:
+          font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+          color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
     }
 
@@ -890,7 +889,7 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -971,7 +970,7 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -982,7 +981,7 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: 
+          transition:
             font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
             color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
@@ -1008,7 +1007,7 @@ h2 {
       color: var(--color);
       margin-top: 0;
 
-      transition: 
+      transition:
         font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
         color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
@@ -1069,7 +1068,7 @@ h2 {
         font-size: var(--h3-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1078,7 +1077,7 @@ h2 {
         font-size: var(--h4-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1087,7 +1086,7 @@ h2 {
         font-size: var(--h5-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1097,7 +1096,7 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1109,7 +1108,7 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: 
+          transition:
             font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
             color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
@@ -1178,7 +1177,7 @@ h2 {
         font-size: var(--p-font);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1230,7 +1229,7 @@ h2 {
       color: var(--color);
       margin-top: 0;
 
-      transition: 
+      transition:
         font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
         color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
@@ -1257,7 +1256,7 @@ h2 {
         font-size: var(--h4-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1268,7 +1267,7 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: 
+          transition:
             font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
             color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
@@ -1279,7 +1278,7 @@ h2 {
         font-size: var(--p-font);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1348,7 +1347,7 @@ h2 {
         font-size: var(--h3-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1357,7 +1356,7 @@ h2 {
         font-size: var(--h4-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1366,7 +1365,7 @@ h2 {
         font-size: var(--h5-font);
         color: var(--color);
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1376,7 +1375,7 @@ h2 {
         color: var(--color);
         margin-top: 0.5em;
 
-        transition: 
+        transition:
           font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
           color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
       }
@@ -1388,7 +1387,7 @@ h2 {
           color: var(--color);
           margin-top: 0.5em;
 
-          transition: 
+          transition:
             font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
             color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
         }
@@ -1453,7 +1452,7 @@ h2 {
       font-size: var(--p-font);
       margin-top: 0.5em;
 
-      transition: 
+      transition:
         font-size 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
         color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
@@ -1491,9 +1490,6 @@ h2 {
   }
 }
 
-
-
-
 /* Themes */
 /* Darkmode */
 body:has(#themeToggle:checked) {
@@ -1510,10 +1506,7 @@ body:has(#themeToggle:checked) {
   --h3-text-shadow: 5px 10px 50px rgba(152, 195, 232, 1);
   --background-color-customize: rgba(37, 78, 113, 0.8);
   --sideNav-box-shadow: 20px 0px 50px rgba(28, 102, 167, 1);
-}  
-
-
-
+}
 
 /* MouseGlowmode */
 
@@ -1781,7 +1774,6 @@ body:has(#themeToggle:checked) {
   }
 }
 
-
 /* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1793,7 +1785,8 @@ body:has(#themeToggle:checked) {
     scroll-behavior: auto !important;
   }
 
-  html, body {
+  html,
+  body {
     scroll-behavior: auto !important;
     cursor: auto !important;
   }
@@ -1817,7 +1810,12 @@ body:has(#themeToggle:checked) {
     margin-right: -16px !important;
   }
 
-  a, summary, label, input[type="checkbox"], input[type="range"], button {
+  a,
+  summary,
+  label,
+  input[type="checkbox"],
+  input[type="range"],
+  button {
     cursor: pointer !important;
   }
 }

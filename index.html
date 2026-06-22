@@ -1,291 +1,507 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <noscript>
-        <style>
-            html, body {
-                cursor: auto !important;
-            }
-            .mouse-glow {
-                display: none;
-            }
+      <style>
+        html,
+        body {
+          cursor: auto !important;
+        }
+        .mouse-glow {
+          display: none;
+        }
 
-            a, summary, label, input[type="checkbox"], input[type="range"], button {
-                cursor: pointer !important;
-            }
+        a,
+        summary,
+        label,
+        input[type="checkbox"],
+        input[type="range"],
+        button {
+          cursor: pointer !important;
+        }
 
-            header > h1 > a, .customizeBtn > .darkMode {
-                cursor: pointer !important;
-            }
-        </style>
+        header > h1 > a,
+        .customizeBtn > .darkMode {
+          cursor: pointer !important;
+        }
+      </style>
     </noscript>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><a href="/">
-            <span>B</span>
-            <span>raham</span>
-            <span>log</span>
-        </a></h1>
+      <h1>
+        <a href="/">
+          <span>B</span>
+          <span>raham</span>
+          <span>log</span>
+        </a>
+      </h1>
     </header>
     <main>
-        <details class="customizeBtn">
-            <summary>✏️ <span>Customize</span></summary>
-            <label for="themeToggle" class="darkMode">
-                <input type="checkbox" id="themeToggle">
-                Dark mode
-            </label>
-            <div class="fontSlider">
-            <label for="fontSlider"><p>Aa</p><p>Aa</p></label>
-                <input type="range" id="fontSlider" name="baseFontSize"
-                min="12" max="22" value="16">
-            </div>
-        </details>
-        <nav class="sideNav">
-            <ul>
-                <li>
-                    <a href="#profesionalGoalH2">
-                        🧐
-                    </a>
-                </li>
-                <li>
-                    <a href="#vakkenH2">
-                        📚
-                    </a>
-                </li>
-                <li>
-                    <a href="#weeklyNerdH2">
-                        🤓
-                    </a>
-                </li>
-                <li>
-                    <a href="#theWebYouWantH2">
-                        🌐
-                    </a>
-                </li>
-                <li>
-                    <a href="#meesterproefH2">
-                        🏆
-                    </a>
-                </li>
-                <li>
-                    <a href="#quoteH2">
-                        💬
-                    </a>
-                </li>    
-            </ul>
-        </nav>
-        <h2 class="profesionalGoalH2" id="profesionalGoalH2">Profesionele leerdoelen</h2>
-        <article class="profesionalGoalsContainer">
-            <article class="profesionalContainer1">
-                <details>
-                    <summary>Leerdoel 1: prototyping</summary>
-                    <p>
-                        Ik wil goede prototypes kunnan maken, waarbij ik goede bruikbare feedback goed verwerk in mijn projecten. Ook wil ik de gemaakte prototypes goed kunnen presenteren aan anderen, zodat ik betere en gerichte feedback kan ontvangen over het gemaakte werk.
-                    </p>
-                </details>
-            </article>
-            <article class="profesionalContainer2">
-                <details>
-                    <summary>Leerdoel 2: samenwerken</summary>
-                    <p>
-                        Ik wil goed kunnen samenwerken met anderen, waarbij ik goed kan communiceren en mijn ideeën duidelijk kan overbrengen. Ook wil ik goed kunnen luisteren naar anderen en hun ideeën serieus nemen, zodat we samen tot betere oplossingen kunnen komen.
-                    </p>
-                </details>
-            </article>
-            <article class="profesionalContainer3">
-                <details>
-                    <summary>Leerdoel 3: communiceren</summary>
-                    <p>
-                        Ik wil de gebruiker goed kunnen Oriënteren en begrijpen, zodat ik user interfaces kan maken die goed aansluiten bij de gebruiker(s). Op deze manier kan de website de pijnpunten van gebruikers omzeilen.
-                    </p>
-                </details>
-            </article>
+      <details class="customizeBtn">
+        <summary>✏️ <span>Customize</span></summary>
+        <label for="themeToggle" class="darkMode">
+          <input type="checkbox" id="themeToggle" />
+          Dark mode
+        </label>
+        <div class="fontSlider">
+          <label for="fontSlider"
+            ><p>Aa</p>
+            <p>Aa</p></label
+          >
+          <input
+            type="range"
+            id="fontSlider"
+            name="baseFontSize"
+            min="12"
+            max="22"
+            value="16"
+          />
+        </div>
+      </details>
+      <nav class="sideNav">
+        <ul>
+          <li>
+            <a href="#profesionalGoalH2"> 🧐 </a>
+          </li>
+          <li>
+            <a href="#vakkenH2"> 📚 </a>
+          </li>
+          <li>
+            <a href="#weeklyNerdH2"> 🤓 </a>
+          </li>
+          <li>
+            <a href="#theWebYouWantH2"> 🌐 </a>
+          </li>
+          <li>
+            <a href="#meesterproefH2"> 🏆 </a>
+          </li>
+          <li>
+            <a href="#quoteH2"> 💬 </a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="profesionalGoalH2" id="profesionalGoalH2">
+        Profesionele leerdoelen
+      </h2>
+      <article class="profesionalGoalsContainer">
+        <article class="profesionalContainer1">
+          <details>
+            <summary>Leerdoel 1: prototyping</summary>
+            <p>
+              Ik wil goede prototypes kunnan maken, waarbij ik goede bruikbare
+              feedback goed verwerk in mijn projecten. Ook wil ik de gemaakte
+              prototypes goed kunnen presenteren aan anderen, zodat ik betere en
+              gerichte feedback kan ontvangen over het gemaakte werk.
+            </p>
+          </details>
         </article>
-        <h3 class="usageGoalH3" id="usageGoalH3">Toepassing leerdoelen</h3>
-        <article class="usageGoalsContainer">
-            <article class="usageContainer1">
-                <details>
-                    <summary>Toepassing leerdoel 1</summary>
-                    <p>
-                        Tijdens de meesterproef heb ik mijn prototyping skills direct in de praktijk kunnen toepassen door een user test op te stellen. Ik heb de user test met mijn oom gedaan, waarbij ik hem de website (prototype) heb laten gebruiken. Ik heb hier verschillende inzichten uit kunnen halen die ik vervolgens heb kunnnen vertalen in aanpassingen voor het prototype. De user test heb ik ook aan de opdrachtgever uit kunnen leggen en duidelijk kunnen maken waarom ons idee zo sterk is om toe te passen.
-                    </p>
-                </details>
-            </article>
-            <article class="usageContainer2">
-                <details>
-                    <summary>Toepassing leerdoel 2</summary>
-                    <p>
-                        Het samenwerken in teamsverband is het belangrijkste onderdeel als je in een team aan het werk bent. Als team moet je ten alle tijden op de hoogte zijn op wat elk persoon binnen het team aan het doen is en wat de werkzaamheden zijn. Zo hebben wij dat ook aangepakt binnen ons team bij meesterproef project. Wij hebben elke ochtend contact met elkaar gehouden, en ook elke middag. De ochtend gebruiken wij om de werkzaamheden van de dag in kaart te brengen, wi doet wat? Hiermee krijg je geen conflicten in taken, en ook weet iedereen welke taken er verricht gaan worden. De middag bijeenkomst gebruiken wij om het werk te bekijken en te bespreken op mogelijke aandachtspunten. Ook het sturen van de eigen branch naar de main gebeurt hier gezamelijk, zodat iedereen op de hoogte blijft op wat er gebeurt.
-                    </p>
-                </details>
-            </article>
-            <article class="usageContainer3">
-                <details>
-                    <summary>Toepassing leerdoel 3</summary>
-                    <p>
-                        De toepassing van communicatie wordt erg goed toegepast, omdat iedereen binnen het meesterproef project ten alle tijden contact met elkaar houdt. Ook is de contact met de opdrachtgever en met de testpersoon goed gebleven, doordat wij goed contact hebben gehouden met deze personen. 
-                    </p>
-                </details>
-            </article>
+        <article class="profesionalContainer2">
+          <details>
+            <summary>Leerdoel 2: samenwerken</summary>
+            <p>
+              Ik wil goed kunnen samenwerken met anderen, waarbij ik goed kan
+              communiceren en mijn ideeën duidelijk kan overbrengen. Ook wil ik
+              goed kunnen luisteren naar anderen en hun ideeën serieus nemen,
+              zodat we samen tot betere oplossingen kunnen komen.
+            </p>
+          </details>
         </article>
-        <h2 class="vakkenH2" id="vakkenH2">Vakken</h2>
-        <article class="subjectsContainer">
-            <article class="subjectInleiding">
-                <h3>Inleiding Web development</h3>
-                    <div class="iFrameContainer">
-                        <iFrame src="https://braham3030.github.io/Web_Dev_Inleiding/" loading="lazy" scrolling="no" title="Inleiding website voor de minor"></iFrame>
-                    </div>
-                    <details>
-                        <summary>Meer informatie</summary>
-                        <p>
-                            Bij het vak "inleiding web development" heb ik mijn huidige kennis van html/css en javascript toegepast. Hierbij heb ik data uit de api gehaald om te tonen in mijn website. De API data bevat de namen en verdere informatie van de leerlingen en docenten uit de minor.
-                        </p>
-                        <h4>Nieuwe inzichten:</h4>
-                        <p>
-                            Ik heb hier vooral geleerd hoe ik de huidige kennis over coderen efficiënt heb kunnen toepassen in dit project. Ook heb ik hier met data (fetchen) ophalen op de website gewerkt. Hierbij heb ik met veel data een dynamische pagina gemaakt, waarbij ik de data op mijn eigen manier heb kunnen weergeven. Dit gaf mij de inzicht dat je met 'vanilla' code "data-driven" websites kunt maken, zonder het gebruik van frameworks. Ook is het belangrijk om semantische code te schrijven, zodat de code te alle tijden voor meerdere partijen leesbaar blijft.
-                        </p>
-                    </details>
-            </article>
-            <article class="subjectBT">
-                <h3>Browser Technologies</h3>
-                    <div class="iFrameContainer">
-                        <iFrame src="https://fake-belastingsdienst-form.onrender.com/" loading="lazy" scrolling="no" title="Fake belastingsdienst formulier in de styling van NS"></iFrame>
-                    </div>
-                    <details>
-                        <summary>Meer informatie</summary>
-                        <p>
-                            Bij het vak Browser Technologies (BT) heb ik geleerd om goed de User Experience (UX) van de gebruiker erbij te betrekken. Zo moet de website niet alleen mooi zijn, maar ook functioneel en goed bruikbaar zijn voor de gebruiker zonder problemen.
-                        </p>
-                        <p>
-                            Bij dit vak heb ik veel gebruik gemaakt van formulieren. Het invullen en verwerken van formulieren bevat veel UX elementen die gebruikers moeten kunnen begrijpen. Ook is het belangrijk dat de (eventuele) fouten duidelijk zichtbaar worden weergegeven met een goede uitleg erover.
-                        </p>
-                        <h4>Nieuwe inzichten:</h4>
-                        <p>
-                            Bij dit vak heb ik geleerd hoe cruciaal een formulier moet zijn om de UX zo goed mogelijk te maken. Zo moeten de foutmeldingen goed beschreven zijn en moeten de foutmeldingen ook op een goede manier weergegeven worden, zodat de gebruiker goed kan begrijpen wat de mogelijke fout is. Ook het formulier moet goed onworpen zijn, zodat de gebruiker weet wat er gevraagd wordt en dat er geen onnodige extra vragen erbij worden weergegeven. Een voorbeeld van het slim maken van de formuliering is het toevoegen van "progressive disclosure". Dit betekent dat er vragen pas worden weergegeven als dit van toepassing is. Op deze manier zal de gebruiker geen onnodige vragen tegenkomen bij het invullen van het formulier. Ook is het belangrijk dat de website "progressive enhancement" bevat. Dit betekent dat er een backup optie moet zijn voor op het moment dat er een probleem is met een functionaliteit of de gehele website. Dit kan worden toegevoegd door een "noscript" versie van de website toe te voegen aan de website. Met "noscript" wordt er een backup versie geschreven in html, zodat de gebruiker de website, na problemen, nogsteeds kan bezoeken. 
-                        </p>
-                        <p>
-                            Voorheen heb ik vooral op de "happy flow" van de website gelet, waarbij er veel verschillende animaties en interacties bij komen kijken. Bij dit vak heb ik geleerd dat het ook belangrijk is om te letten op de "UX" kant van de website. Hierbij moet de gebruikerservaring zo goed mogelijk gemaakt worden. Op deze manier kunnen gebruikers de website zonder problemen de website bezoeken.
-                        </p>
-                    </details>
-            </article>
-            <article class="subjectCSS">
-                <h3>CSS control panel</h3>
-                    <div class="iFrameContainer">
-                        <iFrame src="https://css-controlpane-airplane.onrender.com/" loading="lazy" scrolling="no" title="Interactieve CSS control panel van een vliegtuig cockpit"></iFrame>
-                    </div>
-                    <details>
-                        <summary>Meer informatie</summary>
-                        <p>
-                            Ik heb bij het vak CSS veel CSS elementen gebruikt om interactie op de website mogelijk te maken. Hierbij was de challenge om <strong>geen</strong> javascript te gebruiken, maar alleen CSS. Dit was een leuke uitdaging, omdat er veel mogelijkheden zijn met CSS om interactie mogelijk te maken. Zo heb ik bijvoorbeeld gebruik gemaakt van "checkboxes" om de interactie mogelijk te maken. Ook heb ik veel gebruik gemaakt van "transitions" en "animations" om de interactie nog beter te maken voor de gebruiker. Ook heb ik geleerd om in CSS nesting te gebruiken, door te nesten houd je elementen bij elkaar en is het makkelijker om de code terug te lezen.
-                        </p>
-                        <h4>Nieuwe inzichten:</h4>
-                        <p>
-                            Ik heb bij dit vak geleerd hoe krachtig CSS kan zijn om interacties, animaties en styling te maken. Voorheen zou javascript van te pas komen om bepaalde interacties en berekeningen mogelijk te kunnen maken. Zo is het bijvoorbeeld mogelijk in css om de "checkboxes" te gebruiken om interacties tussen elementen mogelijk te maken. Hier wordt de krachtige ":has" selector voor gebruikt om de interactie mogelijk te maken. De ":has" selector kijkt op de status van de "checkbox" en veranderd zo elementen op de website gebaseerd hierop. Ook is er "calc" gebruikt om berekeningen te kunnen maken binnen CSS. Op deze manier is javascript niet meer nodig om de interactie mogelijk te maken.
-                        </p>
-                        <p>
-                            Daarnaast heb ik in de code nieuwe codeer technieken geleerd en toegepast. Zo heb ik gebruk gemaakt van "CSS nesting" om de code beter te structureren en overzichtelijker te maken. Ook heb ik bij dit vak veel gebruik gemaakt van "custom properties". Deze properties zijn variabelen die gebruikt kunnen worden om dynamsich aan te passen in de CSS. Zo kan er bijvoorbeeld de kleur aangepast worden van een element als de property in combinatie met de ":has" selector wordt gebruikt.
-                        </p>
-                    </details>
-            </article>
-            <article class="subjectHackaton">
-                <h3>Hackaton website Nebula Explorer</h3>
-                <div class="iFrameContainer">
-                    <iFrame src="https://hendrythomas.github.io/wdd-meesterschap-hackathon/" loading="lazy" scrolling="no" title="Website over de Nebula explorer"></iFrame>
-                </div>
-                <details>
-                    <summary>Meer informatie</summary>
-                    <p>
-                        Bij dit vak heb ik veel samengewerkt in een team van vier personen. Wij hebben in 1 week de website opgesteld. Hierbij hebben wij de kennis uit de vorige projecten gebruikt om een zo interactief mogelijk product te maken. De website is vooral gemaakt voor UI, en geen UX. Dit betekent dat de gebruiksvriendelijkheid van de website minder van te pas is gekomen.
-                    </p>
-                    <h4>Mijn inbreng en inzichten:</h4>
-                    <p>
-                        Ik heb mij beziggehouden met "scroll-timeline" animaties en het toevoegen van animaties en interacties voor knoppen op de pagina. Zo is het mogelijk op de website om de website als een soort ronde scroll om de wereldbol heen te maken. Op deze manier voelt het niet meer alsof de gebruiker naar beneden scrollt, maar naar rechts toe scrollt. De website bevat ook een <strong>Hamburger menu</strong>, waarbij er elementen op de pagina aangepast kunnen worden. Het atylen, animeren en interacteren met de knop is mijn bezigheid geweest. Zo krijgt de gebruiker een leuke animatie te zien als er op de knop wordt geklikt of hovered. Deze logica voor animaties en interacties is gemaakt met behulp van "checkboxes" en het toepassen van de ":has" selector.
-                    </p>
-                    <p>
-                        De grootste inzicht dat ik heb gebruikt en ook uit het project heb weten te halen is de kracht van HTML en CSS. Ik heb zo min mogelijk javascript gebruikt om de website te coderen. Dit komt doordat HTML en CSS al veel mogelijkheid bieden om interacties en animaties mogelijk te maken.
-                    </p>
-                </details>
-            </article>
-            <article class="subjectHCD">
-                <h3>Human Centered Design website</h3>
-                <div class="iFrameContainer">
-                    <iFrame src="https://braham3030.github.io/HCD_WebDev/" loading="lazy" scrolling="no" title="Website speciaal gemaakt voor 1 gebruiker. De gebruiker is in dit geval blind"></iFrame>
-                </div>
-                <details>
-                    <summary>Meer informatie</summary>
-                    <p>
-                        Bij het vak Human Centered Design (HCD) heb ik geleerd om een website te maken die een hele andere richting opgaat dan de standaard regels van het maken van websites. De website werd steeds gemaakt aan de hand van user tests met een blind persoon. Deze persoon gaf elke week feedback op het werk, waarna er nieuwe itteraties gemaakt werden. Een itteratie die ik bijvoorbeeld heb gemaakt zijn de dikke borders op de website. De testpersoon vond het namelijk fijn om dikke borders te hebben op de website. Dit komt doordat de gebruiker een heel kleine beetje zicht heeft, deze zicht gebruikt de gebruiker om meer informatie uit zijn omgeving te kunen halen.
-                    </p>
-                    <h4>Nieuwe inzichten:</h4>
-                    <p>
-                        Mijn grootste inzicht bij dit vak is het feit dat er anders gedacht moest gaan worden. Zo werd de website gemaakt voor 1 testpersoon en moesten elementen aangepast worden op basis van wat de testperoon wilt. De testpersoon gaf aan dat hij het fijn vond om dikke borders te hebben op de website, omdat de testpersoon een klein beetje zicht nog bevat. Deze zicht wilt de gebruiker wel nog gebruiken om informatie in zijn omgeving te kunnen ontvangen.
-                    </p>
-                    <p>
-                        Het constant testen en itereren van de website heeft mij geleerd om mijn eigen ontwerpprincipes aan de kant te zetten en te focussen op de behoeftes van de testpersoon. Omdat de testpersoon, de persoon is die de website uiteindelijk gaat gebruiken.
-                    </p>
-                </details>
-            </article>
-            <article class="subjectAPI">
-                <h3>API NL Transit</h3>
-                <div class="iFrameContainer">
-                    <iFrame src="https://nl-transit.onrender.com/" loading="lazy" scrolling="no" title="NL transit website met interactieve buslijnen."></iFrame>
-                </div>
-                <details>
-                    <summary>Meer informatie</summary>
-                <p>
-                    Bij het vak API heb ik gebruik gemaakt van API's en de framework "Astro" om een interactieve website te maken met live data. De website bevat een interactieve kaart waarop de gebruiker kan zoeken naar de buslijn. Vervolgens kan de gebruiker de haalbaarheid van de buslijn opmaken.
-                </p>
-                <p>
-                    De kaart is volledig interactief gemaakt met behulp van "leaflet". Ik heb leaflet gebruikt, omdat leaflet kaarten niet veel data nodig heeft om te kunnen functioneren. De data is opgehaald uit "OVApi" en wordt live opgehaald om ervoor te zorgen dat alles up to date blijft. Ook is de website volledig responsive gemaakt, zodat de gebruiker dit ook op mobiel kan gebruiken.
-                </p>
-                <p>
-                    Omdat ik animaties leuk vindt om te maken, heb ik bij deze website animaties gebruikt die er voor zorgen dat de website er nog interactiever en leuker uitziet en aanvoelt.
-                </p>
-                <h4>Nieuwe inzichten:</h4>
-                <p>
-                    Mijn grootste uitdaging bij het maken van een interactieve "OV kaart" was vooral de performance omtrent de data. Het fetchen van de data heb ik deels lokaal (gedownload) en deels dynamisch via de API gedaan. De lokale statische data bevat de bushalte en buslijn informatie. De dynamische data bevat de realtime informatie van de buslijnen. Door de verschillende data punten te combineren is het mogelijk om een interactieve kaart op te stellen. De performance issues die ik heb ondervonden, lagen vooral aan het feit dat de opgehaalde data zwaar was en dat de kaart veel data moest verwerken om dit werkend te krijgen. Ik heb dit kunnen oplossen door de buslijnen niet direct allemaal op de kaart weer te geven. Inplaats daarvan heb ik een zoekfunctie toegevoegd, waarbij de gebruiker instaat is om de buslijn te zoeken en zo te zien waar de bus in realtime bevindt.
-                </p>
-                </details>
-            </article>
+        <article class="profesionalContainer3">
+          <details>
+            <summary>Leerdoel 3: communiceren</summary>
+            <p>
+              Ik wil de gebruiker goed kunnen Oriënteren en begrijpen, zodat ik
+              user interfaces kan maken die goed aansluiten bij de gebruiker(s).
+              Op deze manier kan de website de pijnpunten van gebruikers
+              omzeilen.
+            </p>
+          </details>
         </article>
-        <h2 class="weeklyNerdH2" id="weeklyNerdH2">Weekly nerd</h2>
-        <article class="weeklyNerdContainer">
-            <article class="weeklyNerd1">
-                <details>
-                    <summary>
-                        Killian valkhof
-                    </summary>
-                    <p>
-                        De code kan zo robuust mogelijk gemaakt worden door het gebruik van javascript te minimaliseren. Javascript bevat veel goede functionaliteiten die de gebruiker veel functies geeft om het web te bedienen. Als de gebruiker geen javascript in kan laden, dan lopen de gebruikers tegen het probleem aan dat de website niet meer optimaal werkt. Als oplossing kunnen zoveel mogelijk javascript functionaliteiten vermeden worden en de kracht van html gebruikt worden. Ook kan "noscript" als fallback gebruikt worden om de gebruiker alsnog een goede website belevening te bieden. 
-                    </p>
-                </details>
-                <!-- <h3>Weekly nerd 1:</h3>
+      </article>
+      <h3 class="usageGoalH3" id="usageGoalH3">Toepassing leerdoelen</h3>
+      <article class="usageGoalsContainer">
+        <article class="usageContainer1">
+          <details>
+            <summary>Toepassing leerdoel 1</summary>
+            <p>
+              Tijdens de meesterproef heb ik mijn prototyping skills direct in
+              de praktijk kunnen toepassen door een user test op te stellen. Ik
+              heb de user test met mijn oom gedaan, waarbij ik hem de website
+              (prototype) heb laten gebruiken. Ik heb hier verschillende
+              inzichten uit kunnen halen die ik vervolgens heb kunnnen vertalen
+              in aanpassingen voor het prototype. De user test heb ik ook aan de
+              opdrachtgever uit kunnen leggen en duidelijk kunnen maken waarom
+              ons idee zo sterk is om toe te passen.
+            </p>
+          </details>
+        </article>
+        <article class="usageContainer2">
+          <details>
+            <summary>Toepassing leerdoel 2</summary>
+            <p>
+              Het samenwerken in teamsverband is het belangrijkste onderdeel als
+              je in een team aan het werk bent. Als team moet je ten alle tijden
+              op de hoogte zijn op wat elk persoon binnen het team aan het doen
+              is en wat de werkzaamheden zijn. Zo hebben wij dat ook aangepakt
+              binnen ons team bij meesterproef project. Wij hebben elke ochtend
+              contact met elkaar gehouden, en ook elke middag. De ochtend
+              gebruiken wij om de werkzaamheden van de dag in kaart te brengen,
+              wi doet wat? Hiermee krijg je geen conflicten in taken, en ook
+              weet iedereen welke taken er verricht gaan worden. De middag
+              bijeenkomst gebruiken wij om het werk te bekijken en te bespreken
+              op mogelijke aandachtspunten. Ook het sturen van de eigen branch
+              naar de main gebeurt hier gezamelijk, zodat iedereen op de hoogte
+              blijft op wat er gebeurt.
+            </p>
+          </details>
+        </article>
+        <article class="usageContainer3">
+          <details>
+            <summary>Toepassing leerdoel 3</summary>
+            <p>
+              De toepassing van communicatie wordt erg goed toegepast, omdat
+              iedereen binnen het meesterproef project ten alle tijden contact
+              met elkaar houdt. Ook is de contact met de opdrachtgever en met de
+              testpersoon goed gebleven, doordat wij goed contact hebben
+              gehouden met deze personen.
+            </p>
+          </details>
+        </article>
+      </article>
+      <h2 class="vakkenH2" id="vakkenH2">Vakken</h2>
+      <article class="subjectsContainer">
+        <article class="subjectInleiding">
+          <h3>Inleiding Web development</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://braham3030.github.io/Web_Dev_Inleiding/"
+              loading="lazy"
+              scrolling="no"
+              title="Inleiding website voor de minor"
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Bij het vak "inleiding web development" heb ik mijn huidige kennis
+              van html/css en javascript toegepast. Hierbij heb ik data uit de
+              api gehaald om te tonen in mijn website. De API data bevat de
+              namen en verdere informatie van de leerlingen en docenten uit de
+              minor.
+            </p>
+            <h4>Nieuwe inzichten:</h4>
+            <p>
+              Ik heb hier vooral geleerd hoe ik de huidige kennis over coderen
+              efficiënt heb kunnen toepassen in dit project. Ook heb ik hier met
+              data (fetchen) ophalen op de website gewerkt. Hierbij heb ik met
+              veel data een dynamische pagina gemaakt, waarbij ik de data op
+              mijn eigen manier heb kunnen weergeven. Dit gaf mij de inzicht dat
+              je met 'vanilla' code "data-driven" websites kunt maken, zonder
+              het gebruik van frameworks. Ook is het belangrijk om semantische
+              code te schrijven, zodat de code te alle tijden voor meerdere
+              partijen leesbaar blijft.
+            </p>
+          </details>
+        </article>
+        <article class="subjectBT">
+          <h3>Browser Technologies</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://fake-belastingsdienst-form.onrender.com/"
+              loading="lazy"
+              scrolling="no"
+              title="Fake belastingsdienst formulier in de styling van NS"
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Bij het vak Browser Technologies (BT) heb ik geleerd om goed de
+              User Experience (UX) van de gebruiker erbij te betrekken. Zo moet
+              de website niet alleen mooi zijn, maar ook functioneel en goed
+              bruikbaar zijn voor de gebruiker zonder problemen.
+            </p>
+            <p>
+              Bij dit vak heb ik veel gebruik gemaakt van formulieren. Het
+              invullen en verwerken van formulieren bevat veel UX elementen die
+              gebruikers moeten kunnen begrijpen. Ook is het belangrijk dat de
+              (eventuele) fouten duidelijk zichtbaar worden weergegeven met een
+              goede uitleg erover.
+            </p>
+            <h4>Nieuwe inzichten:</h4>
+            <p>
+              Bij dit vak heb ik geleerd hoe cruciaal een formulier moet zijn om
+              de UX zo goed mogelijk te maken. Zo moeten de foutmeldingen goed
+              beschreven zijn en moeten de foutmeldingen ook op een goede manier
+              weergegeven worden, zodat de gebruiker goed kan begrijpen wat de
+              mogelijke fout is. Ook het formulier moet goed onworpen zijn,
+              zodat de gebruiker weet wat er gevraagd wordt en dat er geen
+              onnodige extra vragen erbij worden weergegeven. Een voorbeeld van
+              het slim maken van de formuliering is het toevoegen van
+              "progressive disclosure". Dit betekent dat er vragen pas worden
+              weergegeven als dit van toepassing is. Op deze manier zal de
+              gebruiker geen onnodige vragen tegenkomen bij het invullen van het
+              formulier. Ook is het belangrijk dat de website "progressive
+              enhancement" bevat. Dit betekent dat er een backup optie moet zijn
+              voor op het moment dat er een probleem is met een functionaliteit
+              of de gehele website. Dit kan worden toegevoegd door een
+              "noscript" versie van de website toe te voegen aan de website. Met
+              "noscript" wordt er een backup versie geschreven in html, zodat de
+              gebruiker de website, na problemen, nogsteeds kan bezoeken.
+            </p>
+            <p>
+              Voorheen heb ik vooral op de "happy flow" van de website gelet,
+              waarbij er veel verschillende animaties en interacties bij komen
+              kijken. Bij dit vak heb ik geleerd dat het ook belangrijk is om te
+              letten op de "UX" kant van de website. Hierbij moet de
+              gebruikerservaring zo goed mogelijk gemaakt worden. Op deze manier
+              kunnen gebruikers de website zonder problemen de website bezoeken.
+            </p>
+          </details>
+        </article>
+        <article class="subjectCSS">
+          <h3>CSS control panel</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://css-controlpane-airplane.onrender.com/"
+              loading="lazy"
+              scrolling="no"
+              title="Interactieve CSS control panel van een vliegtuig cockpit"
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Ik heb bij het vak CSS veel CSS elementen gebruikt om interactie
+              op de website mogelijk te maken. Hierbij was de challenge om
+              <strong>geen</strong> javascript te gebruiken, maar alleen CSS.
+              Dit was een leuke uitdaging, omdat er veel mogelijkheden zijn met
+              CSS om interactie mogelijk te maken. Zo heb ik bijvoorbeeld
+              gebruik gemaakt van "checkboxes" om de interactie mogelijk te
+              maken. Ook heb ik veel gebruik gemaakt van "transitions" en
+              "animations" om de interactie nog beter te maken voor de
+              gebruiker. Ook heb ik geleerd om in CSS nesting te gebruiken, door
+              te nesten houd je elementen bij elkaar en is het makkelijker om de
+              code terug te lezen.
+            </p>
+            <h4>Nieuwe inzichten:</h4>
+            <p>
+              Ik heb bij dit vak geleerd hoe krachtig CSS kan zijn om
+              interacties, animaties en styling te maken. Voorheen zou
+              javascript van te pas komen om bepaalde interacties en
+              berekeningen mogelijk te kunnen maken. Zo is het bijvoorbeeld
+              mogelijk in css om de "checkboxes" te gebruiken om interacties
+              tussen elementen mogelijk te maken. Hier wordt de krachtige ":has"
+              selector voor gebruikt om de interactie mogelijk te maken. De
+              ":has" selector kijkt op de status van de "checkbox" en veranderd
+              zo elementen op de website gebaseerd hierop. Ook is er "calc"
+              gebruikt om berekeningen te kunnen maken binnen CSS. Op deze
+              manier is javascript niet meer nodig om de interactie mogelijk te
+              maken.
+            </p>
+            <p>
+              Daarnaast heb ik in de code nieuwe codeer technieken geleerd en
+              toegepast. Zo heb ik gebruk gemaakt van "CSS nesting" om de code
+              beter te structureren en overzichtelijker te maken. Ook heb ik bij
+              dit vak veel gebruik gemaakt van "custom properties". Deze
+              properties zijn variabelen die gebruikt kunnen worden om dynamsich
+              aan te passen in de CSS. Zo kan er bijvoorbeeld de kleur aangepast
+              worden van een element als de property in combinatie met de ":has"
+              selector wordt gebruikt.
+            </p>
+          </details>
+        </article>
+        <article class="subjectHackaton">
+          <h3>Hackaton website Nebula Explorer</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://hendrythomas.github.io/wdd-meesterschap-hackathon/"
+              loading="lazy"
+              scrolling="no"
+              title="Website over de Nebula explorer"
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Bij dit vak heb ik veel samengewerkt in een team van vier
+              personen. Wij hebben in 1 week de website opgesteld. Hierbij
+              hebben wij de kennis uit de vorige projecten gebruikt om een zo
+              interactief mogelijk product te maken. De website is vooral
+              gemaakt voor UI, en geen UX. Dit betekent dat de
+              gebruiksvriendelijkheid van de website minder van te pas is
+              gekomen.
+            </p>
+            <h4>Mijn inbreng en inzichten:</h4>
+            <p>
+              Ik heb mij beziggehouden met "scroll-timeline" animaties en het
+              toevoegen van animaties en interacties voor knoppen op de pagina.
+              Zo is het mogelijk op de website om de website als een soort ronde
+              scroll om de wereldbol heen te maken. Op deze manier voelt het
+              niet meer alsof de gebruiker naar beneden scrollt, maar naar
+              rechts toe scrollt. De website bevat ook een
+              <strong>Hamburger menu</strong>, waarbij er elementen op de pagina
+              aangepast kunnen worden. Het atylen, animeren en interacteren met
+              de knop is mijn bezigheid geweest. Zo krijgt de gebruiker een
+              leuke animatie te zien als er op de knop wordt geklikt of hovered.
+              Deze logica voor animaties en interacties is gemaakt met behulp
+              van "checkboxes" en het toepassen van de ":has" selector.
+            </p>
+            <p>
+              De grootste inzicht dat ik heb gebruikt en ook uit het project heb
+              weten te halen is de kracht van HTML en CSS. Ik heb zo min
+              mogelijk javascript gebruikt om de website te coderen. Dit komt
+              doordat HTML en CSS al veel mogelijkheid bieden om interacties en
+              animaties mogelijk te maken.
+            </p>
+          </details>
+        </article>
+        <article class="subjectHCD">
+          <h3>Human Centered Design website</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://braham3030.github.io/HCD_WebDev/"
+              loading="lazy"
+              scrolling="no"
+              title="Website speciaal gemaakt voor 1 gebruiker. De gebruiker is in dit geval blind"
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Bij het vak Human Centered Design (HCD) heb ik geleerd om een
+              website te maken die een hele andere richting opgaat dan de
+              standaard regels van het maken van websites. De website werd
+              steeds gemaakt aan de hand van user tests met een blind persoon.
+              Deze persoon gaf elke week feedback op het werk, waarna er nieuwe
+              itteraties gemaakt werden. Een itteratie die ik bijvoorbeeld heb
+              gemaakt zijn de dikke borders op de website. De testpersoon vond
+              het namelijk fijn om dikke borders te hebben op de website. Dit
+              komt doordat de gebruiker een heel kleine beetje zicht heeft, deze
+              zicht gebruikt de gebruiker om meer informatie uit zijn omgeving
+              te kunen halen.
+            </p>
+            <h4>Nieuwe inzichten:</h4>
+            <p>
+              Mijn grootste inzicht bij dit vak is het feit dat er anders
+              gedacht moest gaan worden. Zo werd de website gemaakt voor 1
+              testpersoon en moesten elementen aangepast worden op basis van wat
+              de testperoon wilt. De testpersoon gaf aan dat hij het fijn vond
+              om dikke borders te hebben op de website, omdat de testpersoon een
+              klein beetje zicht nog bevat. Deze zicht wilt de gebruiker wel nog
+              gebruiken om informatie in zijn omgeving te kunnen ontvangen.
+            </p>
+            <p>
+              Het constant testen en itereren van de website heeft mij geleerd
+              om mijn eigen ontwerpprincipes aan de kant te zetten en te
+              focussen op de behoeftes van de testpersoon. Omdat de testpersoon,
+              de persoon is die de website uiteindelijk gaat gebruiken.
+            </p>
+          </details>
+        </article>
+        <article class="subjectAPI">
+          <h3>API NL Transit</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://nl-transit.onrender.com/"
+              loading="lazy"
+              scrolling="no"
+              title="NL transit website met interactieve buslijnen."
+            ></iframe>
+          </div>
+          <details>
+            <summary>Meer informatie</summary>
+            <p>
+              Bij het vak API heb ik gebruik gemaakt van API's en de framework
+              "Astro" om een interactieve website te maken met live data. De
+              website bevat een interactieve kaart waarop de gebruiker kan
+              zoeken naar de buslijn. Vervolgens kan de gebruiker de
+              haalbaarheid van de buslijn opmaken.
+            </p>
+            <p>
+              De kaart is volledig interactief gemaakt met behulp van "leaflet".
+              Ik heb leaflet gebruikt, omdat leaflet kaarten niet veel data
+              nodig heeft om te kunnen functioneren. De data is opgehaald uit
+              "OVApi" en wordt live opgehaald om ervoor te zorgen dat alles up
+              to date blijft. Ook is de website volledig responsive gemaakt,
+              zodat de gebruiker dit ook op mobiel kan gebruiken.
+            </p>
+            <p>
+              Omdat ik animaties leuk vindt om te maken, heb ik bij deze website
+              animaties gebruikt die er voor zorgen dat de website er nog
+              interactiever en leuker uitziet en aanvoelt.
+            </p>
+            <h4>Nieuwe inzichten:</h4>
+            <p>
+              Mijn grootste uitdaging bij het maken van een interactieve "OV
+              kaart" was vooral de performance omtrent de data. Het fetchen van
+              de data heb ik deels lokaal (gedownload) en deels dynamisch via de
+              API gedaan. De lokale statische data bevat de bushalte en buslijn
+              informatie. De dynamische data bevat de realtime informatie van de
+              buslijnen. Door de verschillende data punten te combineren is het
+              mogelijk om een interactieve kaart op te stellen. De performance
+              issues die ik heb ondervonden, lagen vooral aan het feit dat de
+              opgehaalde data zwaar was en dat de kaart veel data moest
+              verwerken om dit werkend te krijgen. Ik heb dit kunnen oplossen
+              door de buslijnen niet direct allemaal op de kaart weer te geven.
+              Inplaats daarvan heb ik een zoekfunctie toegevoegd, waarbij de
+              gebruiker instaat is om de buslijn te zoeken en zo te zien waar de
+              bus in realtime bevindt.
+            </p>
+          </details>
+        </article>
+      </article>
+      <h2 class="weeklyNerdH2" id="weeklyNerdH2">Weekly nerd</h2>
+      <article class="weeklyNerdContainer">
+        <article class="weeklyNerd1">
+          <details>
+            <summary>Killian valkhof</summary>
+            <p>
+              De code kan zo robuust mogelijk gemaakt worden door het gebruik
+              van javascript te minimaliseren. Javascript bevat veel goede
+              functionaliteiten die de gebruiker veel functies geeft om het web
+              te bedienen. Als de gebruiker geen javascript in kan laden, dan
+              lopen de gebruikers tegen het probleem aan dat de website niet
+              meer optimaal werkt. Als oplossing kunnen zoveel mogelijk
+              javascript functionaliteiten vermeden worden en de kracht van html
+              gebruikt worden. Ook kan "noscript" als fallback gebruikt worden
+              om de gebruiker alsnog een goede website belevening te bieden.
+            </p>
+          </details>
+          <!-- <h3>Weekly nerd 1:</h3>
                 <h4>Killian valkhof</h4>
                 <p>
                     De code kan zo robuust mogelijk gemaakt worden door het gebruik van javascript te minimaliseren. Javascript bevat veel goede functionaliteiten die de gebruiker veel functies geeft om het web te bedienen. Als de gebruiker geen javascript in kan laden, dan lopen de gebruikers tegen het probleem aan dat de website niet meer optimaal werkt. Als oplossing kunnen zoveel mogelijk javascript functionaliteiten vermeden worden en de kracht van html gebruikt worden. Ook kan "noscript" als fallback gebruikt worden om de gebruiker alsnog een goede website belevening te bieden.
                 </p> -->
-            </article>
-            <article class="weeklyNerd2">
-                <details>
-                    <summary>
-                        Peter Paul Koch
-                    </summary>
-                    <p>
-                    De browser bestaat al een lange tijd. En sinds het ontstaan van de browser zijn er vele aanpassingen en functies erbij gekomen. Zo was er vroeger alleen de mogelijkheid om html te gebruiken, waardoor er geen styling kon plaatsvinden. Later kwamen css en javasript erbij, met deze toevoegingen kon er veel meer bereikt worden op het web.
-                    <br>
-                    Vroeger had elke browser zijn eigen javascript engine om javascript te kunnen schrijven.
-                    <br>
-                    De rendering engine is verantwoordelijk voor het renderen van de html en css. De render constuctureerd de DOM. Dit maakt <strong>geen</strong> interface of javascript engine.
-                    <br>
-                    Als iets ooit heeft gewerkt in de browser, dan moet dit ook altijd blijven werken. Dit heet <strong>backwards compatibility</strong>.
-                </p>
-                </details>
-                <!-- <h3>Weekly nerd 2:</h3>
+        </article>
+        <article class="weeklyNerd2">
+          <details>
+            <summary>Peter Paul Koch</summary>
+            <p>
+              De browser bestaat al een lange tijd. En sinds het ontstaan van de
+              browser zijn er vele aanpassingen en functies erbij gekomen. Zo
+              was er vroeger alleen de mogelijkheid om html te gebruiken,
+              waardoor er geen styling kon plaatsvinden. Later kwamen css en
+              javasript erbij, met deze toevoegingen kon er veel meer bereikt
+              worden op het web.
+              <br />
+              Vroeger had elke browser zijn eigen javascript engine om
+              javascript te kunnen schrijven.
+              <br />
+              De rendering engine is verantwoordelijk voor het renderen van de
+              html en css. De render constuctureerd de DOM. Dit maakt
+              <strong>geen</strong> interface of javascript engine.
+              <br />
+              Als iets ooit heeft gewerkt in de browser, dan moet dit ook altijd
+              blijven werken. Dit heet <strong>backwards compatibility</strong>.
+            </p>
+          </details>
+          <!-- <h3>Weekly nerd 2:</h3>
                 <h4>Peter Paul Koch</h4>
                 <p>
                     De browser bestaat al een lange tijd. En sinds het ontstaan van de browser zijn er vele aanpassingen en functies erbij gekomen. Zo was er vroeger alleen de mogelijkheid om html te gebruiken, waardoor er geen styling kon plaatsvinden. Later kwamen css en javasript erbij, met deze toevoegingen kon er veel meer bereikt worden op het web.
@@ -296,21 +512,32 @@
                     <br>
                     Als iets ooit heeft gewerkt in de browser, dan moet dit ook altijd blijven werken. Dit heet <strong>backwards compatibility</strong>.
                 </p> -->
-            </article>
-            <article class="weeklyNerd3">
-                <details>
-                    <summary>
-                        Nils Binder
-                    </summary>
-                    <p>
-                    Designs moeten niet altijd flat zijn, maar ook bepaalde interactie bevatten om de gebruiker een ervaring mee te geven. De interacties kunnen op verschillende manier geoptimaliseerd worden voor de gebruiker. Grids en Subgrid kunnen hier een rol inspelen, zodat de elementen op de website goed geordend blijven. Ook tussen de pagina's kunnen animaties gebruikt worden. Denk hierbij aan een navigatie die van de ene actieve pagina naar de andere animeert. Hiermee wordt er voor een betere gebruikerservaring gezorgd.
-                    <br>
-                    Als er een error message wordt gegeven, dan is het belagrijk dat deze error message de volledige informatie bevat voor de gebruiker. Hiermee wordt de UX beter.
-                    <br>
-                    Als er een bepaalde veld (required) is om in te vullen, dan is het belangrijk dat de gebruiker weet wat de verschillende tekens betekenen op de website. Zo kan er <strong>optional</strong> gebruikt worden om dit te verduidelijken.
-                </p>
-                </details>
-                <!-- <h3>Weekly nerd 3:</h3>
+        </article>
+        <article class="weeklyNerd3">
+          <details>
+            <summary>Nils Binder</summary>
+            <p>
+              Designs moeten niet altijd flat zijn, maar ook bepaalde interactie
+              bevatten om de gebruiker een ervaring mee te geven. De interacties
+              kunnen op verschillende manier geoptimaliseerd worden voor de
+              gebruiker. Grids en Subgrid kunnen hier een rol inspelen, zodat de
+              elementen op de website goed geordend blijven. Ook tussen de
+              pagina's kunnen animaties gebruikt worden. Denk hierbij aan een
+              navigatie die van de ene actieve pagina naar de andere animeert.
+              Hiermee wordt er voor een betere gebruikerservaring gezorgd.
+              <br />
+              Als er een error message wordt gegeven, dan is het belagrijk dat
+              deze error message de volledige informatie bevat voor de
+              gebruiker. Hiermee wordt de UX beter.
+              <br />
+              Als er een bepaalde veld (required) is om in te vullen, dan is het
+              belangrijk dat de gebruiker weet wat de verschillende tekens
+              betekenen op de website. Zo kan er
+              <strong>optional</strong> gebruikt worden om dit te
+              verduidelijken.
+            </p>
+          </details>
+          <!-- <h3>Weekly nerd 3:</h3>
                 <h4>Nils Binder</h4>
                 <p>
                     Designs moeten niet altijd flat zijn, maar ook bepaalde interactie bevatten om de gebruiker een ervaring mee te geven. De interacties kunnen op verschillende manier geoptimaliseerd worden voor de gebruiker. Grids en Subgrid kunnen hier een rol inspelen, zodat de elementen op de website goed geordend blijven. Ook tussen de pagina's kunnen animaties gebruikt worden. Denk hierbij aan een navigatie die van de ene actieve pagina naar de andere animeert. Hiermee wordt er voor een betere gebruikerservaring gezorgd.
@@ -319,343 +546,603 @@
                     <br>
                     Als er een bepaalde veld (required) is om in te vullen, dan is het belangrijk dat de gebruiker weet wat de verschillende tekens betekenen op de website. Zo kan er <strong>optional</strong> gebruikt worden om dit te verduidelijken.
                 </p> -->
-            </article>
-            <article class="weeklyNerd4">
-                <details>
-                    <summary>
-                        Robbert Broersma - Yolanda
-                    </summary>
-                    <h4>Opbouw van een formulier</h4>
-                    <ol>
-                        <li>Introductie tekst aan het begin</li>
-                        <li>Vervolgens de informatie opvragen die nodig is voor het formulier</li>
-                        <li>Voordat de gebruiker de antwoorden inzendt, kan de gebruiker de waarden die ingevuld zijn controleren en aanpassen</li>
-                        <li>Na het verzenden kan de gebruiker de fouten inzien in een samenvatting</li>
-                    </ol>
-                    <h4>Als de gebruiker op verzenden klikt, zal er een duidelijke bevestiging komen hiervan</h4>
-                    <ul>
-                        <li>Alle velden moeten ingevuld worden, als een veld niet verplicht is staat dit erbij</li>
-                        <li>Er mogen geen onnodige gegevens opgevraagd worden</li>
-                        <li>De gebruiker kan de samenvatting van de fouten bovenaan het formulier vinden. De foutmelding moet aanklikbaar zijn en ook focusbaar</li>
-                        <li>Onder de "form submit" knop komt de tekst te staan. Hier staat dan bijvoorbeeld "vul alle velden in"</li>
-                        <li>De gebruiker kan ook de status ervan zien, bijvoorbeeld "opslaan"</li>
-                        <li>formulier verstuurd!</li>
-                    </ul>
-                    <h4>Inhoud van de formulier</h4>
-                    <ul>
-                        <li>Geef alleen de informatie die echt nodig is</li>
-                        <li>Alle verplichte vragen moeten goed aangegeven zijn</li>
-                        <li>Er moet goede uitleg zijn over waarom de gegevens opgevraagd worden</li>
-                    </ul>
-                    <h4>Design competent</h4>
-                    <ul>
-                        <li>Kleurcontrast van componenten op een pagina moet goed gecontroleerd worden. De rand moet goede contrast bevatten ten opzichte van de achtergrond</li>
-                        <li>De componenten moeten groot genoeg zijn, zodat er geen rare overflows ontstaan</li>
-                    </ul>
-                    <h5>Design formulier</h5>
-                    <ul>
-                        <li>Buttons moeten aan het begin van de regel staan</li>
-                        <li>voortgang van de gebruiker moet bovenin het formulier aangegeven worden in tekst</li>
-                        <li>De navigatie moet consisten zijn</li>
-                        <li>Het einde moet duidelijk aangegeven worden</li>
-                        <li>Verplichte en niet verplichte velden moeten duidelijk aangegeven worden. Dit moet niet alleen in asterisk, maar ook in tekst</li>
-                        <li>Buttons moeten onderaan een ul staan</li>
-                    </ul>
-                    <h5>Flow formulier</h5>
-                    <ul>
-                        <li>In de footer link moeten de contact voor hulp en klantenservice komen</li>
-                        <li>Op meerdere plekken moeten er een begin en introductie getoont worden. Dit om de gebruiker duidelijk te maken wat er gevraagd wordt op het formulier</li>
-                        <li>Voortgang moet bovenaan komen</li>
-                        <li>De afkortingen en jargon moet uitgelegd worden in het formulier</li>
-                    </ul>
-                    <h5>Labels</h5>
-                    <ul>
-                        <li>De code voor label moeten altijd de zichtbare labeltekst bevatten, zodat de screenreader dit kan lezen</li>
-                        <li>Type alles uit, gebruik geen afkortingen. Bijvoorbeeld "voornam(en)" is fout, "voornaam 1 of meerdere" is goed</li>
-                        <li>Het is belangrijk dat de browser autocomplete hierop werkt</li>
-                    </ul>
-                    <h5>Beschrijving van velden</h5>
-                    <ul>
-                        <li>De belangrijke uitleg moet altijd goed zichtbaar zijn</li>
-                        <li>Informatie moet in volgorde staan</li>
-                        <li>Als er extra teksten bij form veld horen dan moet dit met "aria-desrcibedby" aangegeven worden</li>
-                        <li>Ook foutmeldingen kunnen met extra tekst via "aria-describedby" gedaan worden</li>
-                        <li>Foutmeldingen van radiogroups worden ook met "aria-describedby" aan de fieldset gekoppeld</li>
-                    </ul>
-                    <h5>Controleren</h5>
-                    <ul>
-                        <li>De laatste stap moet de ingevulde gegevens samenvatten en weergeven aan de gebruiker</li>
-                        <li>Het formulier moet altijd gewijzigd kunnen worden achteraf</li>
-                        <li>De ingevoerde gegevens mogen nooit vertaald worden</li>
-                    </ul>
-                </details>
-            </article>
-            <article class="weeklyNerd5">
-                <details>
-                    <summary>
-                        Rosa
-                    </summary>
-                    <p>
-                        Servers worden beheerd door verschillende partijen. De servers kunnen gehackt worden en zo vele verschillende data van veel mensen verkrijgen. Als je zelf een server opstelt en gebruikt, dan bezit je de data zelf. Hierdoor ben je niet afhankelijk van partijen die meekijken of hackers die veel data kunnen stelen. Ook de beveiliging is belangrijk voor een de server. Dit is waar "Planner Obsolence" zich mee bezig houdt. Het waarborgen van veiligheid.
-                    </p>
-                    <h4>Eco Driven server</h4>
-                        <p>
-                            Dit moet actief deelnemen aan de onderhoud van de server om mee te mogen doen. Ander heet het geen "eco driven server".
-                            <br>
-                            De middelen moeten uit herbruikbaar materiaal komen. Bijvoorbeeld uit afval geviste computer. De bash script update vervolgens elk uur de dns.
-                        </p>
-                        <h4>Zelf-hosten van:</h4>
-                        <ul>
-                            <li>Git (gitea,forgejo)</li>
-                            <li>Messaging platform</li>
-                            <li>Je eigen website</li>
-                            <li>Radioshow?</li>
-                        </ul>
-                </details>
-            </article>
-            <article class="weeklyNerd6">
-                <details>
-                    <summary>
-                        Johan Huijkman
-                    </summary>
-                    <p>
-                    Het accessible maken van websites en apps is erg belangrijk. Hiermee wordt ervoor gezorgd dat iedereen included is. WACG is niet de enige hulpmiddel, voor het toegankelijk maken van websites en apps. De beste manier om toegankelijkheid te verbeteren is door de toegankelijkheidsvragen bij de gebruiker neer te leggen. Zo is het handiger om een user test te doen met de persoon die de toegankelijkheidsfeatures nodig heeft om op de website of app te kunnen navigeren.
-                    </p>
-                </details>
-            </article>
-            <article class="weeklyNerd7">
-                <details>
-                    <summary>
-                        Hans de Zwart
-                    </summary>
-                    <h4>Privacy</h4>
-                    <p>
-                        Er wordt altijd iets verborgen zonder dat je het zelf doorhebt. Denk bijvoorbeeld aan bankgegevens.
-                    </p>
-                    <ul>
-                        <li><strong>Een individueel recht</strong>
-                            <br>
-                            Met rust gelaten worden
-                        </li>
-                        <li><strong>Een sociaal recht</strong>
-                            <br>
-                            Het in elke context anders kunnen zijn
-                        </li>
-                        <li><strong>Een democratisch noodzaak</strong>
-                            <br>
-                            Autonoom je mening kunnen vormen
-                        </li>
-                    </ul>
-                    <p>
-                        Het wel en niet willen delen van informatie verschilt per context. Dokter? Familie? Vrienden? Werk?
-                    </p>
-                    <p>
-                        <strong>Contextcollect</strong> is het samenvoegen van context. Bijvoorbeeld je hebt iemand op Facebook gezien hoe iemand is.
-                    </p>
-                    <p>
-                        <strong>Privacy verschuift steeds.</strong> Vroeger deelde je best weinig, omdat er minder te delen viel. Nu wordt er meer gedeelt, bijvoorbeeld met de overheid.
-                    </p>
-                    <p>
-                        “Never reveal your identity”
-                    </p>
-                    <p>
-                        Ook het IP adres wordt in de wet onder persoonsgegevens gezien. Als de gegevens niet gekoppeld kan word aan de persoon dan zijn het geen persoonsgegevens. Als dit wel zo is dan wordt het AVG ingesteld.
-                    </p>
-                    <p>
-                        Je moet een geldige reden hebben om gegevens te mogen.
-                        <br>
-                        Toestemming vragen voor de gegevens is belangrijk. En het moet ook geïnformeerd zijn. Bijvoorbeeld laten zien met wie het wordt gedeeld en waarvoor. De gegevens moeten ook altijd ingetrokken kunnen worden.
-                    </p>
-                    <h4>Als gegevens noodzakelijk zijn voor het uitvoeren van een overeenkomst</h4>
-                    <ul>
-                        <li>Wettelijk verplicht, dus overheid</li>
-                        <li>Bij vitaal belang is dat ook belangrijk. Bijvoorbeeld als iemand in gevaar is, dan kun je de telefoon gebruiken</li>
-                        <li>Bij algemeen belang of voor het openbaar gezag. Bijvoorbeeld politie</li>
-                        <li>Bij een gerechtvaardigd belang. Bijvoorbeeld nodig om dienst uit te kunnen voeren. Het beste is om mensen om toestemming te vragen</li>
-                    </ul>
-                    <p>
-                        Doelbinding. als je data hebt verzameld dan mag dit niet zomaar gedeeld worden. Dus alleen geldig voor doel 1 en niet doel 2.
-                    </p>
-                    <h4>Rechten</h4>
-                    <ul>
-                        <li>Je mag altijd je gegevens inzien en corrigeren en aanvullen en verwijderen</li>
-                        <li>Je hebt recht op vergetelheid. Bijvoorbeeld oude data</li>
-                        <li>Data mag meegenomen worden van de ene partij naar de andere partij. Bijvoorbeeld als je Spotify abonnement hebt, dan moet je dat mee kunnen nemen naar een andere dienst. Het moet op een digitale manier, makkelijk overgezet kunnen worden</li>
-                        <li>Door de AVG is data over personen niet alleen maar een asset…</li>
-                        <li>Data over personen is ook een liability.</li>
-                        <li>Goed nadenken over de gegevens die je verzameld. Hier zijn bedrijven aansprakelijk voor.</li>
-                        <li>Dataminimalisatie is belangrijk om ervoor te zorgen dat er niet teveel data wordt verzameld.</li>
-                    </ul>
-                    <h4>Achttal strategieën om privacy te waarborgen:</h4>
-                    <ol>
-                        <li>Minimise</li>
-                        <li>Separate</li>
-                        <li>Inform</li>
-                        <li>Control</li>
-                        <li>Abstract</li>
-                        <li>Demonstrate</li>
-                        <li>Hide</li>
-                        <li>Enforce</li>
-                    </ol>
-                </details>
-            </article>
-            <article class="weeklyNerd8">
-                <details>
-                    <summary>Q42</summary>
-                    <p>
-                        Q42 streeft ernaar om het leven van mensen slimmer, beter en leuker te maken.
-                    </p>
-                    <h4>Green choice opdracht</h4>
-                    <p>
-                        Q42 heeft als opdracht gekregen om de design system van "Green Choice" te maken. Het doel hierbij is dat de gebruiker bij het zien van "Green Choice" direct weet dat het "Green Choice" is. Denk hierbij bijvoorbeeld aan de grote herkenbare letter "M" van DcDonalds. Het moet vanaf het begin toegankelijk zijn. Main goal van green choice is dat het design systeem veel meer gebruikt wordt. Minimaal 80% adoptie.
-                    </p>
-                    <ol>
-                        <li>Interdisciplionair</li>
-                        <li>Grote klanten</li>
-                        <li>Werken met AI</li>
-                        <li>A tot Y</li>
-                    </ol>
-                </details>
-            </article>
-            <article class="weeklyNerd9">
-                <details>
-                    <summary>De Voorhoede</summary>
-                    <p>
-                        Tijdens de presentatie van De Voorhoede kwamen er veel technische aspecten op het gebied van frontend aanbod. Zo wordt er bijvoorbeeld met animaties, accesibility en techniek gewerkt. Deze 3 aspecten kwamen vooral aanbod tijdens de presentatie. Het technische deel viel mij het meeste op, omdat dit voor mij een nieuwe inzicht gaf op de manier van het gebruiken ervan.
-                    </p>
-                    <p>
-                        De nieuwe, gepresenteerde, techniek dat aanbod kwam was PWA gebruik. Dit houdt in dat een website 'offline' (zonder internet) ook blijft werken. Dit kan met een dynamische website gedaan worden door lokaal de voortgang van de gebruiker op te slaan. Voor een statische website betekent dit het opslaan van de webstie in de browser, zodat de website altijd blijft draaien, ook zonder wifi.
-                    </p>
-                    <p>
-                        Zelf heb ik deze techniek toegepast bij het eindproject voor "Ink". De reden van deze toepassing is performance. Door de website op te slaan bij binnenkomst, hoeft de website niet elke pagina afzonderlijk te laden bij binnenkomst. Deze toepassing heb ik ook erin gezet, omdat sommige pagina's meer laadtijd vereisten dan verwacht. Dit zag ik vooral bij pagina's met veel plaatjes erin.
-                    </p>
-                </details>
-            </article>
         </article>
-        <h2 class="theWebYouWantH2" id="theWebYouWantH2">The Web You Want</h2>
-        <article class="theWebYouWantContainer" >
-            <article class="theWebYouWant1">
-                <details>
-                    <summary>
-                        The Web You Want (deel 1)
-                    </summary>
-                    <p>
-                        "The Web You Want" richtte zich op de meningen en argumenten van verschillende experts in het werkveld. De experts willen vooral dat het web toegankelijk en inclusief wordt voor <strong>iedereen</strong>. 
-                    </p>
-                    <p>
-                        Tijdens de conferentie werd duidelijk dat het web een belangrijk onderdeel is van ons leven en dat iedereen toegang moet hebben tot het web. 
-                    </p>
-                    <p>
-                        Een spreker die mij bij is gebleven is <strong>Niels Leenheer</strong>. Hij liet zien dat er heel veel dingen mogelijk zijn met het web. Zelfs dingen die je niet zou verwachten. Zo liet let <strong>Niels</strong> zien dat er met CSS een klok gemaakt kan worden in een "osciloscoop". Dit apparaat wordt normaal gesproken gebruikt voor het meten van electrische signalen. <strong>Niels</strong> liet ons ook zien dat hij een klok heeft kunnen maken met lasers. Dit is een hele mooie toepassing van het web.
-                    </p>
-                    <p>
-                        De gastsprekers willen vooral dat het web accessible wordt en ook inclusief voor veel mensen. Ook worden er veel argumenten gegeven waarom het web toegankelijk en inclusief moet zijn. Zo is het web een belangrijk onderdeel van ons leven en is het belangrijk dat iedereen toegang heeft tot het web, ongeacht hun beperkingen of omstandigheden. Ook wordt er benadrukt dat het web een plek moet zijn waar iedereen zich welkom voelt en waar iedereen kan deelnemen aan de online gemeenschap.
-                    </p>
-                </details>
-            </article>
-            <article class="theWebYouWant1">
-                <details>
-                    <summary>
-                        The Web You Want (deel 2)
-                    </summary>
-                    <p>
-                        Tijdens het tweede deel van de conferentie van "The Web You Want" werd er nog dieper ingegaan op de web accesibility en inclusiviteit. Voor wie bouwen wij het web eigenlijk, en welke middelen worden er gebruikt? Het was interessant om te zien dat Artificial Intelligence (AI) een positieve bijdrage kan leveren aan het web.
-                    </p>
-                    <p>
-                        Léonie Watson heeft gesproken over de rol van AI in het web en er buiten. Léonie is zelf blind, waardoor zij vaak hulpmiddelen gebruikt om haar omgeving te kunnen begrijpen. Tegenwoordig wordt AI steeds vaker gebruikt om te helpen bij taken, zo gebruikt Léonie AI om haar omgeving beter te kunnen begrijpen. Met "Meta AI glass" kan Léonie haar omgeving laten beschrijven en ook objecten vinden. Ook op het web wordt dit gebruikt, zo kijk AI met Léonie mee op het scherm om zo relevante informatie op de website te vinden. Zo kan AI ervoor zorgen dat de goede kleur shirt wordt gekocht. In dit geval vervangt AI de taken van de mens, doordat AI nu de website beschrijft. De accesibility kant hiervan is het gebruik van "alt labels". Dit wordt niet altijd gedaan, waardoor AI de taak ervan over kan nemen, zodat er alsnog een beschrijving naar voren kan komen.
-                        <br>
-                        AI heeft ook negatieve impact op het web. Zo worden gebruikers vaak lui, omdat er minder werk verricht hoeft te worden door AI. AI zorgt er ook voor dat de gebruiker de AI steeds meer begint te vertrouwen op wat het zegt. Als AI direct wordt gebruikt, zonder er zelf over na te denken dan kan het voorkomen dat de gebruiker niks weet van wat de gebruiker gedaan heeft om een bepaalde doel te bereiken met AI.
-                    </p>
-                    <p>
-                        Cyd Stumpel wilde vooral dat het web leuk en interactief is. Zij liet zien dat er veel mogelijkheden zijn op gebied van design, animaties en interacties op het web. Ook gaf zij aan dat <strong>HTML first</strong> belangrijk is. Omdat "HTML" al veel mogelijkheden bevat.
-                    </p>
-                    <p>
-                        De gastsprekers tijdens dit "The Web You Want" wilden vooral een interactieve en toegankelijke web. Het web waarop de gebruiker veel verschillende interacties tegenkomt en ook waar de toegankelijkheid gewaarborgd blijft, zodat een grotere groep gebruikers mee kan doen aan het gebruik van "The Web"
-                    </p>
-                </details>
-            </article>
+        <article class="weeklyNerd4">
+          <details>
+            <summary>Robbert Broersma - Yolanda</summary>
+            <h4>Opbouw van een formulier</h4>
+            <ol>
+              <li>Introductie tekst aan het begin</li>
+              <li>
+                Vervolgens de informatie opvragen die nodig is voor het
+                formulier
+              </li>
+              <li>
+                Voordat de gebruiker de antwoorden inzendt, kan de gebruiker de
+                waarden die ingevuld zijn controleren en aanpassen
+              </li>
+              <li>
+                Na het verzenden kan de gebruiker de fouten inzien in een
+                samenvatting
+              </li>
+            </ol>
+            <h4>
+              Als de gebruiker op verzenden klikt, zal er een duidelijke
+              bevestiging komen hiervan
+            </h4>
+            <ul>
+              <li>
+                Alle velden moeten ingevuld worden, als een veld niet verplicht
+                is staat dit erbij
+              </li>
+              <li>Er mogen geen onnodige gegevens opgevraagd worden</li>
+              <li>
+                De gebruiker kan de samenvatting van de fouten bovenaan het
+                formulier vinden. De foutmelding moet aanklikbaar zijn en ook
+                focusbaar
+              </li>
+              <li>
+                Onder de "form submit" knop komt de tekst te staan. Hier staat
+                dan bijvoorbeeld "vul alle velden in"
+              </li>
+              <li>
+                De gebruiker kan ook de status ervan zien, bijvoorbeeld
+                "opslaan"
+              </li>
+              <li>formulier verstuurd!</li>
+            </ul>
+            <h4>Inhoud van de formulier</h4>
+            <ul>
+              <li>Geef alleen de informatie die echt nodig is</li>
+              <li>Alle verplichte vragen moeten goed aangegeven zijn</li>
+              <li>
+                Er moet goede uitleg zijn over waarom de gegevens opgevraagd
+                worden
+              </li>
+            </ul>
+            <h4>Design competent</h4>
+            <ul>
+              <li>
+                Kleurcontrast van componenten op een pagina moet goed
+                gecontroleerd worden. De rand moet goede contrast bevatten ten
+                opzichte van de achtergrond
+              </li>
+              <li>
+                De componenten moeten groot genoeg zijn, zodat er geen rare
+                overflows ontstaan
+              </li>
+            </ul>
+            <h5>Design formulier</h5>
+            <ul>
+              <li>Buttons moeten aan het begin van de regel staan</li>
+              <li>
+                voortgang van de gebruiker moet bovenin het formulier aangegeven
+                worden in tekst
+              </li>
+              <li>De navigatie moet consisten zijn</li>
+              <li>Het einde moet duidelijk aangegeven worden</li>
+              <li>
+                Verplichte en niet verplichte velden moeten duidelijk aangegeven
+                worden. Dit moet niet alleen in asterisk, maar ook in tekst
+              </li>
+              <li>Buttons moeten onderaan een ul staan</li>
+            </ul>
+            <h5>Flow formulier</h5>
+            <ul>
+              <li>
+                In de footer link moeten de contact voor hulp en klantenservice
+                komen
+              </li>
+              <li>
+                Op meerdere plekken moeten er een begin en introductie getoont
+                worden. Dit om de gebruiker duidelijk te maken wat er gevraagd
+                wordt op het formulier
+              </li>
+              <li>Voortgang moet bovenaan komen</li>
+              <li>
+                De afkortingen en jargon moet uitgelegd worden in het formulier
+              </li>
+            </ul>
+            <h5>Labels</h5>
+            <ul>
+              <li>
+                De code voor label moeten altijd de zichtbare labeltekst
+                bevatten, zodat de screenreader dit kan lezen
+              </li>
+              <li>
+                Type alles uit, gebruik geen afkortingen. Bijvoorbeeld
+                "voornam(en)" is fout, "voornaam 1 of meerdere" is goed
+              </li>
+              <li>
+                Het is belangrijk dat de browser autocomplete hierop werkt
+              </li>
+            </ul>
+            <h5>Beschrijving van velden</h5>
+            <ul>
+              <li>De belangrijke uitleg moet altijd goed zichtbaar zijn</li>
+              <li>Informatie moet in volgorde staan</li>
+              <li>
+                Als er extra teksten bij form veld horen dan moet dit met
+                "aria-desrcibedby" aangegeven worden
+              </li>
+              <li>
+                Ook foutmeldingen kunnen met extra tekst via "aria-describedby"
+                gedaan worden
+              </li>
+              <li>
+                Foutmeldingen van radiogroups worden ook met "aria-describedby"
+                aan de fieldset gekoppeld
+              </li>
+            </ul>
+            <h5>Controleren</h5>
+            <ul>
+              <li>
+                De laatste stap moet de ingevulde gegevens samenvatten en
+                weergeven aan de gebruiker
+              </li>
+              <li>
+                Het formulier moet altijd gewijzigd kunnen worden achteraf
+              </li>
+              <li>De ingevoerde gegevens mogen nooit vertaald worden</li>
+            </ul>
+          </details>
         </article>
-        <h2 class="meesterproefH2" id="meesterproefH2">Meesterproef</h2>
-        <article class="meesterproefContainer">
-            <article class="meesterproef">
-                <h3>{Ink}</h3>
-                    <div class="iFrameContainer">
-                        <iFrame src="https://ink-training.onrender.com/" loading="lazy" scrolling="no" title="Inleiding website voor de minor"></iFrame>
-                    </div>
-                    <details>
-                        <summary>De uitkomst van het project</summary>
-                        <p>
-                            Als afsluiting van de minor hebben we met ons team gewerkt aan het project voor <strong>{Ink}</strong>. Ink heeft ons gevraagd om de huidige training van <strong>Ink</strong> te verbeteren. De training gaat erover hoe gebruikers kunnen interacteren met mensen met een beperking. Het probleem dat ervaren werd, was het feit dat mensen erg snel afhaakten. Dit probleem hebben wij als team proberen op te lossen door minigames te maken voor de verschillende trainingen. 
-                        </p>
+        <article class="weeklyNerd5">
+          <details>
+            <summary>Rosa</summary>
+            <p>
+              Servers worden beheerd door verschillende partijen. De servers
+              kunnen gehackt worden en zo vele verschillende data van veel
+              mensen verkrijgen. Als je zelf een server opstelt en gebruikt, dan
+              bezit je de data zelf. Hierdoor ben je niet afhankelijk van
+              partijen die meekijken of hackers die veel data kunnen stelen. Ook
+              de beveiliging is belangrijk voor een de server. Dit is waar
+              "Planner Obsolence" zich mee bezig houdt. Het waarborgen van
+              veiligheid.
+            </p>
+            <h4>Eco Driven server</h4>
+            <p>
+              Dit moet actief deelnemen aan de onderhoud van de server om mee te
+              mogen doen. Ander heet het geen "eco driven server".
+              <br />
+              De middelen moeten uit herbruikbaar materiaal komen. Bijvoorbeeld
+              uit afval geviste computer. De bash script update vervolgens elk
+              uur de dns.
+            </p>
+            <h4>Zelf-hosten van:</h4>
+            <ul>
+              <li>Git (gitea,forgejo)</li>
+              <li>Messaging platform</li>
+              <li>Je eigen website</li>
+              <li>Radioshow?</li>
+            </ul>
+          </details>
+        </article>
+        <article class="weeklyNerd6">
+          <details>
+            <summary>Johan Huijkman</summary>
+            <p>
+              Het accessible maken van websites en apps is erg belangrijk.
+              Hiermee wordt ervoor gezorgd dat iedereen included is. WACG is
+              niet de enige hulpmiddel, voor het toegankelijk maken van websites
+              en apps. De beste manier om toegankelijkheid te verbeteren is door
+              de toegankelijkheidsvragen bij de gebruiker neer te leggen. Zo is
+              het handiger om een user test te doen met de persoon die de
+              toegankelijkheidsfeatures nodig heeft om op de website of app te
+              kunnen navigeren.
+            </p>
+          </details>
+        </article>
+        <article class="weeklyNerd7">
+          <details>
+            <summary>Hans de Zwart</summary>
+            <h4>Privacy</h4>
+            <p>
+              Er wordt altijd iets verborgen zonder dat je het zelf doorhebt.
+              Denk bijvoorbeeld aan bankgegevens.
+            </p>
+            <ul>
+              <li>
+                <strong>Een individueel recht</strong>
+                <br />
+                Met rust gelaten worden
+              </li>
+              <li>
+                <strong>Een sociaal recht</strong>
+                <br />
+                Het in elke context anders kunnen zijn
+              </li>
+              <li>
+                <strong>Een democratisch noodzaak</strong>
+                <br />
+                Autonoom je mening kunnen vormen
+              </li>
+            </ul>
+            <p>
+              Het wel en niet willen delen van informatie verschilt per context.
+              Dokter? Familie? Vrienden? Werk?
+            </p>
+            <p>
+              <strong>Contextcollect</strong> is het samenvoegen van context.
+              Bijvoorbeeld je hebt iemand op Facebook gezien hoe iemand is.
+            </p>
+            <p>
+              <strong>Privacy verschuift steeds.</strong> Vroeger deelde je best
+              weinig, omdat er minder te delen viel. Nu wordt er meer gedeelt,
+              bijvoorbeeld met de overheid.
+            </p>
+            <p>“Never reveal your identity”</p>
+            <p>
+              Ook het IP adres wordt in de wet onder persoonsgegevens gezien.
+              Als de gegevens niet gekoppeld kan word aan de persoon dan zijn
+              het geen persoonsgegevens. Als dit wel zo is dan wordt het AVG
+              ingesteld.
+            </p>
+            <p>
+              Je moet een geldige reden hebben om gegevens te mogen.
+              <br />
+              Toestemming vragen voor de gegevens is belangrijk. En het moet ook
+              geïnformeerd zijn. Bijvoorbeeld laten zien met wie het wordt
+              gedeeld en waarvoor. De gegevens moeten ook altijd ingetrokken
+              kunnen worden.
+            </p>
+            <h4>
+              Als gegevens noodzakelijk zijn voor het uitvoeren van een
+              overeenkomst
+            </h4>
+            <ul>
+              <li>Wettelijk verplicht, dus overheid</li>
+              <li>
+                Bij vitaal belang is dat ook belangrijk. Bijvoorbeeld als iemand
+                in gevaar is, dan kun je de telefoon gebruiken
+              </li>
+              <li>
+                Bij algemeen belang of voor het openbaar gezag. Bijvoorbeeld
+                politie
+              </li>
+              <li>
+                Bij een gerechtvaardigd belang. Bijvoorbeeld nodig om dienst uit
+                te kunnen voeren. Het beste is om mensen om toestemming te
+                vragen
+              </li>
+            </ul>
+            <p>
+              Doelbinding. als je data hebt verzameld dan mag dit niet zomaar
+              gedeeld worden. Dus alleen geldig voor doel 1 en niet doel 2.
+            </p>
+            <h4>Rechten</h4>
+            <ul>
+              <li>
+                Je mag altijd je gegevens inzien en corrigeren en aanvullen en
+                verwijderen
+              </li>
+              <li>Je hebt recht op vergetelheid. Bijvoorbeeld oude data</li>
+              <li>
+                Data mag meegenomen worden van de ene partij naar de andere
+                partij. Bijvoorbeeld als je Spotify abonnement hebt, dan moet je
+                dat mee kunnen nemen naar een andere dienst. Het moet op een
+                digitale manier, makkelijk overgezet kunnen worden
+              </li>
+              <li>
+                Door de AVG is data over personen niet alleen maar een asset…
+              </li>
+              <li>Data over personen is ook een liability.</li>
+              <li>
+                Goed nadenken over de gegevens die je verzameld. Hier zijn
+                bedrijven aansprakelijk voor.
+              </li>
+              <li>
+                Dataminimalisatie is belangrijk om ervoor te zorgen dat er niet
+                teveel data wordt verzameld.
+              </li>
+            </ul>
+            <h4>Achttal strategieën om privacy te waarborgen:</h4>
+            <ol>
+              <li>Minimise</li>
+              <li>Separate</li>
+              <li>Inform</li>
+              <li>Control</li>
+              <li>Abstract</li>
+              <li>Demonstrate</li>
+              <li>Hide</li>
+              <li>Enforce</li>
+            </ol>
+          </details>
+        </article>
+        <article class="weeklyNerd8">
+          <details>
+            <summary>Q42</summary>
+            <p>
+              Q42 streeft ernaar om het leven van mensen slimmer, beter en
+              leuker te maken.
+            </p>
+            <h4>Green choice opdracht</h4>
+            <p>
+              Q42 heeft als opdracht gekregen om de design system van "Green
+              Choice" te maken. Het doel hierbij is dat de gebruiker bij het
+              zien van "Green Choice" direct weet dat het "Green Choice" is.
+              Denk hierbij bijvoorbeeld aan de grote herkenbare letter "M" van
+              DcDonalds. Het moet vanaf het begin toegankelijk zijn. Main goal
+              van green choice is dat het design systeem veel meer gebruikt
+              wordt. Minimaal 80% adoptie.
+            </p>
+            <ol>
+              <li>Interdisciplionair</li>
+              <li>Grote klanten</li>
+              <li>Werken met AI</li>
+              <li>A tot Y</li>
+            </ol>
+          </details>
+        </article>
+        <article class="weeklyNerd9">
+          <details>
+            <summary>De Voorhoede</summary>
+            <p>
+              Tijdens de presentatie van De Voorhoede kwamen er veel technische
+              aspecten op het gebied van frontend aanbod. Zo wordt er
+              bijvoorbeeld met animaties, accesibility en techniek gewerkt. Deze
+              3 aspecten kwamen vooral aanbod tijdens de presentatie. Het
+              technische deel viel mij het meeste op, omdat dit voor mij een
+              nieuwe inzicht gaf op de manier van het gebruiken ervan.
+            </p>
+            <p>
+              De nieuwe, gepresenteerde, techniek dat aanbod kwam was PWA
+              gebruik. Dit houdt in dat een website 'offline' (zonder internet)
+              ook blijft werken. Dit kan met een dynamische website gedaan
+              worden door lokaal de voortgang van de gebruiker op te slaan. Voor
+              een statische website betekent dit het opslaan van de webstie in
+              de browser, zodat de website altijd blijft draaien, ook zonder
+              wifi.
+            </p>
+            <p>
+              Zelf heb ik deze techniek toegepast bij het eindproject voor
+              "Ink". De reden van deze toepassing is performance. Door de
+              website op te slaan bij binnenkomst, hoeft de website niet elke
+              pagina afzonderlijk te laden bij binnenkomst. Deze toepassing heb
+              ik ook erin gezet, omdat sommige pagina's meer laadtijd vereisten
+              dan verwacht. Dit zag ik vooral bij pagina's met veel plaatjes
+              erin.
+            </p>
+          </details>
+        </article>
+      </article>
+      <h2 class="theWebYouWantH2" id="theWebYouWantH2">The Web You Want</h2>
+      <article class="theWebYouWantContainer">
+        <article class="theWebYouWant1">
+          <details>
+            <summary>The Web You Want (deel 1)</summary>
+            <p>
+              "The Web You Want" richtte zich op de meningen en argumenten van
+              verschillende experts in het werkveld. De experts willen vooral
+              dat het web toegankelijk en inclusief wordt voor
+              <strong>iedereen</strong>.
+            </p>
+            <p>
+              Tijdens de conferentie werd duidelijk dat het web een belangrijk
+              onderdeel is van ons leven en dat iedereen toegang moet hebben tot
+              het web.
+            </p>
+            <p>
+              Een spreker die mij bij is gebleven is
+              <strong>Niels Leenheer</strong>. Hij liet zien dat er heel veel
+              dingen mogelijk zijn met het web. Zelfs dingen die je niet zou
+              verwachten. Zo liet let <strong>Niels</strong> zien dat er met CSS
+              een klok gemaakt kan worden in een "osciloscoop". Dit apparaat
+              wordt normaal gesproken gebruikt voor het meten van electrische
+              signalen. <strong>Niels</strong> liet ons ook zien dat hij een
+              klok heeft kunnen maken met lasers. Dit is een hele mooie
+              toepassing van het web.
+            </p>
+            <p>
+              De gastsprekers willen vooral dat het web accessible wordt en ook
+              inclusief voor veel mensen. Ook worden er veel argumenten gegeven
+              waarom het web toegankelijk en inclusief moet zijn. Zo is het web
+              een belangrijk onderdeel van ons leven en is het belangrijk dat
+              iedereen toegang heeft tot het web, ongeacht hun beperkingen of
+              omstandigheden. Ook wordt er benadrukt dat het web een plek moet
+              zijn waar iedereen zich welkom voelt en waar iedereen kan
+              deelnemen aan de online gemeenschap.
+            </p>
+          </details>
+        </article>
+        <article class="theWebYouWant1">
+          <details>
+            <summary>The Web You Want (deel 2)</summary>
+            <p>
+              Tijdens het tweede deel van de conferentie van "The Web You Want"
+              werd er nog dieper ingegaan op de web accesibility en
+              inclusiviteit. Voor wie bouwen wij het web eigenlijk, en welke
+              middelen worden er gebruikt? Het was interessant om te zien dat
+              Artificial Intelligence (AI) een positieve bijdrage kan leveren
+              aan het web.
+            </p>
+            <p>
+              Léonie Watson heeft gesproken over de rol van AI in het web en er
+              buiten. Léonie is zelf blind, waardoor zij vaak hulpmiddelen
+              gebruikt om haar omgeving te kunnen begrijpen. Tegenwoordig wordt
+              AI steeds vaker gebruikt om te helpen bij taken, zo gebruikt
+              Léonie AI om haar omgeving beter te kunnen begrijpen. Met "Meta AI
+              glass" kan Léonie haar omgeving laten beschrijven en ook objecten
+              vinden. Ook op het web wordt dit gebruikt, zo kijk AI met Léonie
+              mee op het scherm om zo relevante informatie op de website te
+              vinden. Zo kan AI ervoor zorgen dat de goede kleur shirt wordt
+              gekocht. In dit geval vervangt AI de taken van de mens, doordat AI
+              nu de website beschrijft. De accesibility kant hiervan is het
+              gebruik van "alt labels". Dit wordt niet altijd gedaan, waardoor
+              AI de taak ervan over kan nemen, zodat er alsnog een beschrijving
+              naar voren kan komen.
+              <br />
+              AI heeft ook negatieve impact op het web. Zo worden gebruikers
+              vaak lui, omdat er minder werk verricht hoeft te worden door AI.
+              AI zorgt er ook voor dat de gebruiker de AI steeds meer begint te
+              vertrouwen op wat het zegt. Als AI direct wordt gebruikt, zonder
+              er zelf over na te denken dan kan het voorkomen dat de gebruiker
+              niks weet van wat de gebruiker gedaan heeft om een bepaalde doel
+              te bereiken met AI.
+            </p>
+            <p>
+              Cyd Stumpel wilde vooral dat het web leuk en interactief is. Zij
+              liet zien dat er veel mogelijkheden zijn op gebied van design,
+              animaties en interacties op het web. Ook gaf zij aan dat
+              <strong>HTML first</strong> belangrijk is. Omdat "HTML" al veel
+              mogelijkheden bevat.
+            </p>
+            <p>
+              De gastsprekers tijdens dit "The Web You Want" wilden vooral een
+              interactieve en toegankelijke web. Het web waarop de gebruiker
+              veel verschillende interacties tegenkomt en ook waar de
+              toegankelijkheid gewaarborgd blijft, zodat een grotere groep
+              gebruikers mee kan doen aan het gebruik van "The Web"
+            </p>
+          </details>
+        </article>
+      </article>
+      <h2 class="meesterproefH2" id="meesterproefH2">Meesterproef</h2>
+      <article class="meesterproefContainer">
+        <article class="meesterproef">
+          <h3>{Ink}</h3>
+          <div class="iFrameContainer">
+            <iframe
+              src="https://ink-training.onrender.com/"
+              loading="lazy"
+              scrolling="no"
+              title="Inleiding website voor de minor"
+            ></iframe>
+          </div>
+          <details>
+            <summary>De uitkomst van het project</summary>
+            <p>
+              Als afsluiting van de minor hebben we met ons team gewerkt aan het
+              project voor <strong>{Ink}</strong>. Ink heeft ons gevraagd om de
+              huidige training van <strong>Ink</strong> te verbeteren. De
+              training gaat erover hoe gebruikers kunnen interacteren met mensen
+              met een beperking. Het probleem dat ervaren werd, was het feit dat
+              mensen erg snel afhaakten. Dit probleem hebben wij als team
+              proberen op te lossen door minigames te maken voor de
+              verschillende trainingen.
+            </p>
 
-                        <h4>Mijn inbreng binnen het project</h4>
-                        <p>
-                            Tijdens dit project heb ik een grote rol gespeeld in de performance en de animaties van de webpagina's. Mijn belangrijkste bijdragen waren:
-                        </p>
-                        <ul>
-                            <li><strong>Performance & PWA:</strong> Omdat onze applicatie veel zware afbeeldingen bevat, heb ik Progressive Web App (PWA) technieken toegepast. Door de website lokaal te cachen, hoeven zware pagina's niet bij elke klik opnieuw in te laden, wat de laadtijd en gebruikerservaring enorm heeft verbeterd.</li>
-                            <li><strong>User Testing:</strong> Ik heb het initiatief genomen om ons prototype te testen in de praktijk (onder andere door een user test met mijn oom). De data uit deze test heb ik vertaald naar concrete verbeterpunten voor het team en succesvol uitgelegd bij de opdrachtgever.</li>
-                            <li><strong>Development:</strong> Daarnaast heb ik mij bezig gehouden met het maken van animaties en transities op de pagina's en ook tussen pagina's. Ook de gehele infrastructure heb ik in elkaar gezet, waarbij de pagina's ook met elkaar gelinkt zijn en componenten dynamisch veranderen gebaseerd op de webpagina van de gebruiker.</li>
-                        </ul>
+            <h4>Mijn inbreng binnen het project</h4>
+            <p>
+              Tijdens dit project heb ik een grote rol gespeeld in de
+              performance en de animaties van de webpagina's. Mijn belangrijkste
+              bijdragen waren:
+            </p>
+            <ul>
+              <li>
+                <strong>Performance & PWA:</strong> Omdat onze applicatie veel
+                zware afbeeldingen bevat, heb ik Progressive Web App (PWA)
+                technieken toegepast. Door de website lokaal te cachen, hoeven
+                zware pagina's niet bij elke klik opnieuw in te laden, wat de
+                laadtijd en gebruikerservaring enorm heeft verbeterd.
+              </li>
+              <li>
+                <strong>User Testing:</strong> Ik heb het initiatief genomen om
+                ons prototype te testen in de praktijk (onder andere door een
+                user test met mijn oom). De data uit deze test heb ik vertaald
+                naar concrete verbeterpunten voor het team en succesvol
+                uitgelegd bij de opdrachtgever.
+              </li>
+              <li>
+                <strong>Development:</strong> Daarnaast heb ik mij bezig
+                gehouden met het maken van animaties en transities op de
+                pagina's en ook tussen pagina's. Ook de gehele infrastructure
+                heb ik in elkaar gezet, waarbij de pagina's ook met elkaar
+                gelinkt zijn en componenten dynamisch veranderen gebaseerd op de
+                webpagina van de gebruiker.
+              </li>
+            </ul>
 
-                        <h4>Nieuwe inzichten</h4>
-                        <p>
-                            De Meesterproef heeft me ontzettend veel nieuwe inzichten gegeven, vooral op het gebied van samenwerken in een team. Ik heb geleerd dat strakke communicatie en het maken van gezamenlijke codeer-regels handig zijn om een repository schoon te houden. Technisch gezien heeft de implementatie van de PWA me echt laten inzien dat performance van de website ook ertoe doet.
-                        </p>
-                    </details>
-            </article>
+            <h4>Nieuwe inzichten</h4>
+            <p>
+              De Meesterproef heeft me ontzettend veel nieuwe inzichten gegeven,
+              vooral op het gebied van samenwerken in een team. Ik heb geleerd
+              dat strakke communicatie en het maken van gezamenlijke
+              codeer-regels handig zijn om een repository schoon te houden.
+              Technisch gezien heeft de implementatie van de PWA me echt laten
+              inzien dat performance van de website ook ertoe doet.
+            </p>
+          </details>
         </article>
-        <h2>conclusie & reflectie</h2>
-        <article class="conclusieContainer">
-            <article class="conclusieReflectie">
-            <details>
-                <summary>Reflectie</summary>
-                <h4>Grootste leermomenten</h4>
-                <p>
-                    Tijdens de minor heb ik geleerd hoe belangrijk het is om een website robuust te maken. Dit heb ik bijvoorbeeld gedaan door de code zo te schrijven dat er amper javascript in voor hoeft te komen. Hierdoor kan de website blijven functioneren zonder javascript. Ook de toegankelijkheid van de website is erg belangrijk, omdat op deze manier de inclusiviteit van de website gewaarborgd blijft. Zo kan iedereen de website gebruiken, ongeacht de beperking.
-                </p>
+      </article>
+      <h2>conclusie & reflectie</h2>
+      <article class="conclusieContainer">
+        <article class="conclusieReflectie">
+          <details>
+            <summary>Reflectie</summary>
+            <h4>Grootste leermomenten</h4>
+            <p>
+              Tijdens de minor heb ik geleerd hoe belangrijk het is om een
+              website robuust te maken. Dit heb ik bijvoorbeeld gedaan door de
+              code zo te schrijven dat er amper javascript in voor hoeft te
+              komen. Hierdoor kan de website blijven functioneren zonder
+              javascript. Ook de toegankelijkheid van de website is erg
+              belangrijk, omdat op deze manier de inclusiviteit van de website
+              gewaarborgd blijft. Zo kan iedereen de website gebruiken, ongeacht
+              de beperking.
+            </p>
 
-                <h4>Lastige momenten</h4>
-                <p>
-                    Tijdens de minor heb ik ook lastige momenten ervaren. Zo was het soms lastig om ook aan de toegankelijkheid van de website te denken. Ook moest ik verschillende keren de performance van de website goed monitoren, zodat de website goed bleef functioneren. Ook is de performance belangrijk om de User experience hoog te houden, omdat de gebruiker dan niet hoeft te wachten op het laden van een pagina.
-                </p>
+            <h4>Lastige momenten</h4>
+            <p>
+              Tijdens de minor heb ik ook lastige momenten ervaren. Zo was het
+              soms lastig om ook aan de toegankelijkheid van de website te
+              denken. Ook moest ik verschillende keren de performance van de
+              website goed monitoren, zodat de website goed bleef functioneren.
+              Ook is de performance belangrijk om de User experience hoog te
+              houden, omdat de gebruiker dan niet hoeft te wachten op het laden
+              van een pagina.
+            </p>
 
-                <h4>Troste momenten</h4>
-                <p>
-                    Als ik terug kijk op de minor, dan heb ik veel nieuwe dingen geleerd. Zo ben ik anders gaan kijken naar de manier waarop javascript gebruikt wordt. Ook de toegankelijkheid in het proces van het maken van een website is erg belangrijk. Zo ben ik trots op het maken van robuuste code, zodat de website zonder javascript ook kan blijven functioneren.
-                </p>  
-            </details>
-            </article>
-            <article class="conclusieNerd">
-                <details>
-                    <summary>Weekly nerd</summary>
-                    <p>
-                        De verschillende inzichten van de weekly nerds hebben mij een beter beeld gegeven van de verschillende aspecten van het web. De interessante aspecten van de weekly nerds waren vooral de toegankelijkheid en de privacy op het web. Zo was er 1 spreker die een server op heeft gesteld, zodat er onafhankelijk van andere partijen een website gehost kan worden. Hierdoor wil ik zelf ook meer privacy en toegankelijk gericht ontwerpen, zodat de gebruikservaring van de gebruiker verbeterd. Ook zal de privacy van de gebruiker goed gewaarborgd kunnen blijven.
-                    </p>
-                </details>
-            </article>
-            <article class="nextUp">
-                <details>
-                    <summary>What is next?</summary>
-                    <p>
-                        In de toekomst wil ik vooral verder gaan met het maken van robuuste code. Hierbij moet de code robuust zijn voor de gebruiker, maar ook voor andere developers. De code moet naast robuust ook goed toegankelijk zijn, zodat de websites inclusief kunnen zijn voor iedereen.
-                    </p>
-                </details>
-            </article>
+            <h4>Troste momenten</h4>
+            <p>
+              Als ik terug kijk op de minor, dan heb ik veel nieuwe dingen
+              geleerd. Zo ben ik anders gaan kijken naar de manier waarop
+              javascript gebruikt wordt. Ook de toegankelijkheid in het proces
+              van het maken van een website is erg belangrijk. Zo ben ik trots
+              op het maken van robuuste code, zodat de website zonder javascript
+              ook kan blijven functioneren.
+            </p>
+          </details>
         </article>
-            <h2 class="quoteH2" id="quoteH2">Quotes</h2>
-        <article class="quotesContainer">
-            
-            <article class="quote1">
-                <h3>Vasilis</h3>
-                    <p>
-                        "Who needs drugs, if you have CSS"
-                    </p>
-            </article>
+        <article class="conclusieNerd">
+          <details>
+            <summary>Weekly nerd</summary>
+            <p>
+              De verschillende inzichten van de weekly nerds hebben mij een
+              beter beeld gegeven van de verschillende aspecten van het web. De
+              interessante aspecten van de weekly nerds waren vooral de
+              toegankelijkheid en de privacy op het web. Zo was er 1 spreker die
+              een server op heeft gesteld, zodat er onafhankelijk van andere
+              partijen een website gehost kan worden. Hierdoor wil ik zelf ook
+              meer privacy en toegankelijk gericht ontwerpen, zodat de
+              gebruikservaring van de gebruiker verbeterd. Ook zal de privacy
+              van de gebruiker goed gewaarborgd kunnen blijven.
+            </p>
+          </details>
         </article>
+        <article class="nextUp">
+          <details>
+            <summary>What is next?</summary>
+            <p>
+              In de toekomst wil ik vooral verder gaan met het maken van
+              robuuste code. Hierbij moet de code robuust zijn voor de
+              gebruiker, maar ook voor andere developers. De code moet naast
+              robuust ook goed toegankelijk zijn, zodat de websites inclusief
+              kunnen zijn voor iedereen.
+            </p>
+          </details>
+        </article>
+      </article>
+      <h2 class="quoteH2" id="quoteH2">Quotes</h2>
+      <article class="quotesContainer">
+        <article class="quote1">
+          <h3>Vasilis</h3>
+          <p>"Who needs drugs, if you have CSS"</p>
+        </article>
+      </article>
     </main>
     <div class="mouse-glow"></div>
     <script src="script.js"></script>
     <script src="slider.js"></script>
-</body>
+  </body>
 </html>
