@@ -36,6 +36,8 @@ html {
   --background-color: white;
   --h2-color: rgba(28, 102, 167, 0.8);
   --h2-text-shadow: 5px 10px 50px rgba(28, 102, 167, 1);
+  --background-color-header: rgba(28, 102, 167, 0.8);
+  --background-color-sideNav: rgba(28, 102, 167, 0.2);
 }
 
 body {
@@ -66,7 +68,7 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(28, 102, 167, 0.8);
+  background-color: var(--background-color-header);
 
   animation: slideOut 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) forwards;
 
@@ -84,7 +86,7 @@ header {
       font-size: var(--h1-font);
       letter-spacing: 25px;
       margin-right: -25px;
-      color: black;
+      color: var(--color);
       text-decoration: none;
       padding: 0;
       cursor: none;
@@ -92,7 +94,6 @@ header {
       grid-template-columns: auto 1fr;
       grid-template-rows: 1fr 1fr;
       column-gap: 5px;
-      color: black;
       text-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
 
       transition: all 0.8s cubic-bezier(0.33, 0.72, 0, 1.18);
@@ -161,8 +162,8 @@ main {
   flex-direction: column;
   gap: 0.5em;
   padding: 0em;
-  width: 3em;
-  height: 3em;
+  width: 4rem;
+  height: 4rem;
   background-color: rgba(28, 102, 167, 0.8);
   color: black;
   font-size: var(--customize-font);
@@ -175,9 +176,9 @@ main {
 
   transition:
     background-color 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    border-radius 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    border-radius 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
     padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    width 0.5s cubic-bezier(0.33, 0.72, 0, 1.18),
     height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18);
 
   animation: customizeBtnShow 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) both;
@@ -188,8 +189,9 @@ main {
   > summary {
     border-radius: var(--border-radius-customizeBtn);
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -197,15 +199,18 @@ main {
     flex-direction: row;
 
     > span {
-      opacity: 0;
+      opacity: 1;
       visibility: hidden;
-      display: none;
+      /* display: none; */
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
 
       transition:
         opacity 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
         position 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
         visibility 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
-        display 0.1s cubic-bezier(0.33, 0.72, 0, 1.18);
+        width 0.4s cubic-bezier(0.33, 0.72, 0, 1.18);
     }
   }
 }
@@ -218,11 +223,11 @@ main {
 
 .customizeBtn[open] {
   --customize-font: 1.4rem;
-  --border-radius-customizeBtn: 12px;
+  --border-radius-customizeBtn: 16px;
   justify-content: center;
   align-items: center;
-  width: max-content;
-  height: max-content;
+  width: 13rem;
+  height: 13rem;
   padding: 1em;
   gap: 1em;
 
@@ -236,7 +241,10 @@ main {
     > span {
       opacity: 1;
       visibility: visible;
-      display: block;
+      /* display: block; */
+      width: 7rem;
+
+      transition: width 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
   }
 }
@@ -412,7 +420,7 @@ main {
 }
 
 .sideNav {
-  background-color: rgba(28, 102, 167, 0.2);
+  background-color: var(--background-color-sideNav);
   box-shadow: 20px 0px 100px rgba(28, 102, 167, 0.4);
   min-width: 8vw;
   height: 100%;
@@ -1359,11 +1367,16 @@ h2 {
   }
 }
 
+
+
+
 /* Themes */
 /* Darkmode */
 body:has(#themeToggle:checked) {
   --background-color: rgba(27, 58, 84, 0.8);
+  --background-color-header: rgba(13, 48, 78, 0.8);
   --color: white;
+  --background-color-sideNav: rgba(13, 48, 78, 0.8);
   --background-color-article: rgba(13, 48, 78, 0.6);
 
   --h2-color: rgba(152, 195, 232, 0.8);
@@ -1371,9 +1384,10 @@ body:has(#themeToggle:checked) {
 
   --h3-color: rgba(152, 195, 232, 0.8);
   --h3-text-shadow: 5px 10px 50px rgba(152, 195, 232, 1);
-}
+}  
 
-/* Fontslider */
+
+
 
 /* MouseGlowmode */
 
