@@ -169,7 +169,6 @@ main {
   font-weight: bold;
   border: none;
   border-radius: var(--border-radius-customizeBtn);
-  cursor: pointer;
   list-style-type: none;
   overflow: hidden;
   opacity: 0;
@@ -584,7 +583,8 @@ main {
 
   &::after {
     --sideNav-font: 0.6rem;
-    content: "The web you want";
+    content: "The web \A you want";
+    white-space: pre;
     background-color: rgba(28, 102, 167, 0.8);
     backdrop-filter: blur(8px);
     padding: 0.5em 1em;
@@ -1315,7 +1315,6 @@ h2 {
       color: var(--color);
       padding: 1em 2em;
       font-weight: bold;
-      /* cursor: pointer; */
       text-wrap: nowrap;
     }
 
@@ -1639,5 +1638,46 @@ body:has(#themeToggle:checked) {
   .conclusieContainer > *:last-child:nth-child(odd),
   .quotesContainer > *:last-child:nth-child(odd) {
     grid-column: 1 / -1;
+  }
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html, body {
+    scroll-behavior: auto !important;
+    cursor: auto !important;
+  }
+
+  .mouse-glow,
+  .smoke {
+    display: none !important;
+  }
+
+  .customizeBtn,
+  .sideNav,
+  .sideNav::after {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
+
+  header > h1 > a {
+    cursor: pointer !important;
+    letter-spacing: 16px !important;
+    margin-right: -16px !important;
+  }
+
+  a, summary, label, input[type="checkbox"], input[type="range"], button {
+    cursor: pointer !important;
   }
 }
