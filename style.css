@@ -183,8 +183,8 @@ main {
     background-color 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     border-radius 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
     padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    width 0.5s cubic-bezier(0.33, 0.72, 0, 1.18),
-    height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    width 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
+    height 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
     backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s,
     background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
     color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
@@ -239,12 +239,13 @@ main {
   padding: 1em;
   gap: 1em;
   backdrop-filter: blur(2px);
+  box-shadow: 0 0 500px rgba(28, 102, 167, 1);
   
   transition:
     background-color 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     border-radius 0.4s cubic-bezier(0.33, 0.72, 0, 1.18),
     padding 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
-    width 0.5s cubic-bezier(0.33, 0.72, 0, 1.18),
+    width 0.6s cubic-bezier(0.33, 0.72, 0, 1.18),
     height 0.3s cubic-bezier(0.33, 0.72, 0, 1.18),
     backdrop-filter 0.6s cubic-bezier(0.33, 0.72, 0, 1.18) 0.8s,
     background-color 0.8s cubic-bezier(0.33, 0.72, 0, 1.18),
@@ -266,6 +267,8 @@ main {
     }
   }
 }
+
+/* Dark mode */
 
 .customizeBtn > .darkMode {
   --customize-font: 1.2rem;
@@ -381,6 +384,8 @@ main {
   }
 }
 
+/* Font slider */
+
 .customizeBtn > .fontSlider {
   display: flex;
   flex-direction: column;
@@ -433,6 +438,7 @@ main {
       height: calc(1.5em * var(--font-scale));
       margin-top: calc(-0.5em * var(--font-scale));
       border-radius: 50%;
+      cursor: none;
     }
   }
 }
@@ -1631,8 +1637,8 @@ body:has(#themeToggle:checked) {
     --border-radius-customizeBtn: 12px;
     justify-content: flex-start;
     align-items: center;
-    width: max-content;
-    height: max-content;
+    width: 16rem;
+    height: 22rem;
     padding: 1.5em;
     gap: 1em;
 
@@ -1646,7 +1652,6 @@ body:has(#themeToggle:checked) {
       > span {
         opacity: 1;
         visibility: visible;
-        display: block;
         width: 8.8rem;
       }
     }
