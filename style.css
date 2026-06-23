@@ -1592,8 +1592,8 @@ body:has(#themeToggle:checked) {
   }
 
   header > h1 > a {
-    letter-spacing: 200px;
-    margin-right: -200px;
+    letter-spacing: 80px;
+    margin-right: -80px;
   }
 
   @keyframes letterAnimation {
