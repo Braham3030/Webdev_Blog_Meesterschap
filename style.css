@@ -261,7 +261,7 @@ main {
     > span {
       opacity: 1;
       visibility: visible;
-      width: 7rem;
+      width: 7.4rem;
 
       transition: width 0.8s cubic-bezier(0.33, 0.72, 0, 1.18) 0.2s;
     }
@@ -1645,7 +1645,7 @@ body:has(#themeToggle:checked) {
       > span {
         opacity: 1;
         visibility: visible;
-        width: 8.8rem;
+        width: 9.8rem;
       }
     }
   }
